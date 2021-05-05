@@ -1,0 +1,28 @@
+1620210777646	geckodriver	INFO	Listening on 127.0.0.1:60596
+1620210780737	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\IDRIS~1.ALI\\AppData\\Local\\Temp\\rust_mozprofileWgm6xJ"
+1620210781631	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620210783746	Marionette	INFO	Listening on port 60604
+1620210783921	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.onesignal.com/sdks/OneSignalPageSDKES6.js?v=151501, line 1: f: OneSignal: This web push config can only be used on https://tut.az. Your current origin is https://staging.tut.az.
+JavaScript error: https://cdn.onesignal.com/sdks/OneSignalPageSDKES6.js?v=151501, line 1: f: OneSignal: This web push config can only be used on https://tut.az. Your current origin is https://staging.tut.az.
+JavaScript error: https://cdn.onesignal.com/sdks/OneSignalPageSDKES6.js?v=151501, line 1: f: OneSignal: This web push config can only be used on https://tut.az. Your current origin is https://staging.tut.az.
+1620210799052	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:431:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1620210810670	Marionette	INFO	Stopped listening on port 60604
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1620210812478	geckodriver	INFO	Listening on 127.0.0.1:60702
+1620210815571	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\IDRIS~1.ALI\\AppData\\Local\\Temp\\rust_mozprofilemUIyjC"
+1620210816009	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620210817981	Marionette	INFO	Listening on port 60710
+1620210818234	Marionette	WARN	TLS certificate errors will be ignored for this session
+1620210819342	Marionette	INFO	Stopped listening on port 60710
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
