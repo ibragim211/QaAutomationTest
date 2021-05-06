@@ -54,7 +54,7 @@
                           Examples:
                           | data      |
                           | <3758268> |
-                          | 3758    |
+                          | 3758      |
         When Click on the Sayta daxil olmaq button
         Then Verify warning Pop Up message for invalid data
 
