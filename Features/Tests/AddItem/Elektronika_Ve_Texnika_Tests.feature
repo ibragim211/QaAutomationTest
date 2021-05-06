@@ -32,9 +32,9 @@
         And Click on the kredit check box
         And Fill TestTestTest123654789 in to the Tesvir field
         And Fill https://www.youtube.com/watch?v=kiYmBvv94RY in to the videoya kecid field
-        And Fill C:\pythonProject\Features\Photos\Test.jpg photo in to the Sekiller field
-        And Fill C:\pythonProject\Features\Photos\Test2.jpg photo in to the Sekiller field
-        And Fill C:\pythonProject\Features\Photos\Test3.jpg photo in to the Sekiller field
+        And Fill C:\QaAutomationTest\Features\Photos\Test.jpg photo in to the Sekiller field
+        And Fill C:\QaAutomationTest\Features\Photos\Test2.jpg photo in to the Sekiller field
+        And Fill C:\QaAutomationTest\Features\Photos\Test3.jpg photo in to the Sekiller field
         And Click on the Metro field
         And Click on the red line option
         And Click on 28May station option
@@ -63,9 +63,9 @@
         And Click on the kredit check box
         And Fill TestTestTest123654789 in to the Tesvir field
         And Fill https://www.youtube.com/watch?v=kiYmBvv94RY in to the videoya kecid field
-        And Fill C:\pythonProject\Features\Photos\Test.jpg photo in to the Sekiller field
-        And Fill C:\pythonProject\Features\Photos\Test2.jpg photo in to the Sekiller field
-        And Fill C:\pythonProject\Features\Photos\Test3.jpg photo in to the Sekiller field
+        And Fill C:\QaAutomationTest\Features\Photos\Test.jpg photo in to the Sekiller field
+        And Fill C:\QaAutomationTest\Features\Photos\Test2.jpg photo in to the Sekiller field
+        And Fill C:\QaAutomationTest\Features\Photos\Test3.jpg photo in to the Sekiller field
         And Click on the Metro field
         And Click on the red line option
         And Click on 28May station option
@@ -94,9 +94,9 @@
         And Click on the kredit check box
         And Fill TestTestTest123654789 in to the Tesvir field
         And Fill https://www.youtube.com/watch?v=kiYmBvv94RY in to the videoya kecid field
-        And Fill C:\pythonProject\Features\Photos\Test.jpg photo in to the Sekiller field
-        And Fill C:\pythonProject\Features\Photos\Test2.jpg photo in to the Sekiller field
-        And Fill C:\pythonProject\Features\Photos\Test3.jpg photo in to the Sekiller field
+        And Fill C:\QaAutomationTest\Features\Photos\Test.jpg photo in to the Sekiller field
+        And Fill C:\QaAutomationTest\Features\Photos\Test2.jpg photo in to the Sekiller field
+        And Fill C:\QaAutomationTest\Features\Photos\Test3.jpg photo in to the Sekiller field
         And Click on the Metro field
         And Click on the red line option
         And Click on 28May station option
@@ -126,9 +126,9 @@
         And Click on the kredit check box
         And Fill TestTestTest123654789 in to the Tesvir field
         And Fill https://www.youtube.com/watch?v=kiYmBvv94RY in to the videoya kecid field
-        And Fill C:\pythonProject\Features\Photos\Test.jpg photo in to the Sekiller field
-        And Fill C:\pythonProject\Features\Photos\Test2.jpg photo in to the Sekiller field
-        And Fill C:\pythonProject\Features\Photos\Test3.jpg photo in to the Sekiller field
+        And Fill C:\QaAutomationTest\Features\Photos\Test.jpg photo in to the Sekiller field
+        And Fill C:\QaAutomationTest\Features\Photos\Test2.jpg photo in to the Sekiller field
+        And Fill C:\QaAutomationTest\Features\Photos\Test3.jpg photo in to the Sekiller field
         And Click on the Metro field
         And Click on the red line option
         And Click on 28May station option
@@ -157,9 +157,9 @@
         And Click on the kredit check box
         And Fill TestTestTest123654789 in to the Tesvir field
         And Fill https://www.youtube.com/watch?v=kiYmBvv94RY in to the videoya kecid field
-        And Fill C:\pythonProject\Features\Photos\Test.jpg photo in to the Sekiller field
-        And Fill C:\pythonProject\Features\Photos\Test2.jpg photo in to the Sekiller field
-        And Fill C:\pythonProject\Features\Photos\Test3.jpg photo in to the Sekiller field
+        And Fill C:\QaAutomationTest\Features\Photos\Test.jpg photo in to the Sekiller field
+        And Fill C:\QaAutomationTest\Features\Photos\Test2.jpg photo in to the Sekiller field
+        And Fill C:\QaAutomationTest\Features\Photos\Test3.jpg photo in to the Sekiller field
         And Click on the Metro field
         And Click on the red line option
         And Click on 28May station option

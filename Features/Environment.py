@@ -42,8 +42,11 @@ def before_step(context, step):
 
 def after_step(context, step):
     if step.status == 'failed':
-        context.driver.get_screenshot_as_file("C:/pythonProject/Features/Screen_shots/fail.png")
         print('\nStep failed: ', step)
+
+
+def after_feature(context, feature):
+    context.driver.get_screenshot_as_file("C:/pythonProject/Features/Screen_shots/fail.png")
 
 
 def after_scenario(context, feature):

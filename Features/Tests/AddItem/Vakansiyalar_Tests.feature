@@ -56,7 +56,7 @@
         And Select service
         And Select Vakansiya
         And Select İş axtarıram
-        And Fill   in to the city field
+        And Fill     in to the city field
         And Fill Elan Test in to the topic field
         And Click Təhsil
         And Select Ali
@@ -80,7 +80,7 @@
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
-        And Fill C:\pythonProject\Features\Photos\Test.jpg in to the img field
+        And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
         When Click Elanı dərc et
         Then Verify warning Pop Up message Şəhər
 
@@ -119,7 +119,7 @@
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
-        And Fill C:\pythonProject\Features\Photos\Test.jpg in to the img field
+        And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
         When Click Elanı dərc et
         Then Verify warning Pop Up message Bütün xana
 
@@ -159,7 +159,7 @@
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
-        And Fill C:\pythonProject\Features\Photos\Test.jpg in to the img field
+        And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
         When Click Elanı dərc et
         Then Verify warning Pop Up message Bütün xana
 
@@ -198,7 +198,7 @@
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
-        And Fill C:\pythonProject\Features\Photos\Test.jpg in to the img field
+        And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
         When Click Elanı dərc et
         Then Verify warning Pop Up message Bütün xana
 
@@ -237,11 +237,9 @@
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
-        And Fill C:\pythonProject\Features\Photos\Test.jpg in to the img field
+        And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
         When Click Elanı dərc et
         Then Verify warning Pop Up message Bütün xana
-
-
 
         @Authorization @Negative
       Scenario: Biznes Without Yaş Negative
@@ -277,7 +275,7 @@
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
-        And Fill C:\pythonProject\Features\Photos\Test.jpg in to the img field
+        And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
         When Click Elanı dərc et
         Then Verify warning Pop Up message Bütün xana
 
@@ -314,7 +312,7 @@
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
-        And Fill C:\pythonProject\Features\Photos\Test.jpg in to the img field
+        And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
         When Click Elanı dərc et
         Then Verify warning Pop Up message Bütün xana
 
@@ -353,7 +351,7 @@
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
-        And Fill C:\pythonProject\Features\Photos\Test.jpg in to the img field
+        And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
         When Click Elanı dərc et
         Then Verify warning Pop Up message Bütün xana
 
@@ -391,7 +389,7 @@
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
-        And Fill C:\pythonProject\Features\Photos\Test.jpg in to the img field
+        And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
         When Click Elanı dərc et
         Then Verify warning Pop Up message Bütün xana
 
@@ -430,6 +428,6 @@
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
-        And Fill C:\pythonProject\Features\Photos\Test.jpg in to the img field
+        And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
         When Click Elanı dərc et
         Then Verify warning Pop Up message Bütün xana
