@@ -1,4 +1,4 @@
- @Service
+
     Feature: Add service
 
      Background: Steps before authorization
