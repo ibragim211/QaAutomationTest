@@ -1,11 +1,11 @@
 from behave import *
 
 
-@step('Select Moda və stil')
+@step('Select Moda və stil submodule')
 def select_category_cr_item_Moda_Stil(context): context.WebSite.Moda_Ve_Stil_Page.select_category_cr_item_Moda_Stil()
 
 
-@step('Select Hədiyyə və süvenirlər')
+@step('Select Hədiyyə və süvenirlər submodule')
 def select_category_cr_item_Hediyye_Suvenir(
         context): context.WebSite.Moda_Ve_Stil_Page.select_category_cr_item_Hediyye_Suvenir()
 
