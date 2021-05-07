@@ -36,6 +36,7 @@ class BiznesPage(Page):
     _popUpErrWhatsapp = By.XPATH, '//*[text()="Whatsapp üçün prefiksi düzgün qeyd edin"]'
 
     def elan_yerleshdrimek(self):
+        sleep(2)
         self.click_on_element(*self._clickOnElanYerleshdirmek)
 
     def select_category_cr_item(self):

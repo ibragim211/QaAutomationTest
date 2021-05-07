@@ -5,7 +5,7 @@ from behave import *
 def elan_yerlesdirmek_click(context): context.WebSite.Dasinmaz_Emlak_Page.elan_yerlesdirmek_click()
 
 
-@step('Click on the Kateqoriyanı seçin field')
+@Given('Click on the Kateqoriyanı seçin field')
 def category_field_click(context): context.WebSite.Dasinmaz_Emlak_Page.category_field_click()
 
 
@@ -193,12 +193,8 @@ def whats_up_contact(context, whats_up_data): context.WebSite.Dasinmaz_Emlak_Pag
 def click_elan_derc(context): context.WebSite.Dasinmaz_Emlak_Page.click_elan_derc()
 
 
-# @Then("Verify pop up message by element")
-# def pop_up_visible(context): context.WebSite.Dasinmaz_Emlak_Page.pop_up_visible()
-
-
-# @Then('Verify element on the next page')
-# def element_visible(context): context.WebSite.Dasinmaz_Emlak_Page.element_visible()
+@Then('Verify element on the next page')
+def element_visible(context): context.WebSite.Dasinmaz_Emlak_Page.element_visible()
 
 
 @Then('Verify warning message "fill all fields"')

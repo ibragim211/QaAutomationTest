@@ -1,4 +1,4 @@
- @Sign_Ip
+ @Sign_In
     Feature: Sign in
 	In order to sign in
 	As a user of Tut.az
@@ -33,7 +33,7 @@
         When Click on the Sayta daxil olmaq button
         Then Verify warning Pop Up message
 
-       @Authorization @Negative
+      @Authorization @Negative
      Scenario Outline: Sing in using invalid email data
         Given Fill <data> in to the email field as an invalid data
                           Examples:
@@ -47,7 +47,7 @@
         When Click on the Sayta daxil olmaq button
         Then Verify warning Pop Up message for invalid data
 
-        @Authorization @Negative
+      @Authorization @Negative
      Scenario Outline: Sing in using invalid password data
           Given Fill testevgeniymanagement@mail.ru in to the email field
         And Fill <data> in to the password field as an invalid data
