@@ -32,3 +32,29 @@
      Scenario: Sing in without email and password
         When Click on the Sayta daxil olmaq button
         Then Verify warning Pop Up message
+
+       @Authorization @Negative
+     Scenario Outline: Sing in using invalid email data
+        Given Fill <data> in to the email field as an invalid data
+                          Examples:
+                          | data              |
+                          | '     '@gmail.com |
+                          | WrongEmail123.com |
+                          | WrongEmail123     |
+                          | 123456789         |
+                          | ,!@#$%^&@mail.com |
+        And Fill 3758268 in to the password field
+        When Click on the Sayta daxil olmaq button
+        Then Verify warning Pop Up message for invalid data
+
+        @Authorization @Negative
+     Scenario Outline: Sing in using invalid password data
+          Given Fill testevgeniymanagement@mail.ru in to the email field
+        And Fill <data> in to the password field as an invalid data
+                          Examples:
+                          | data      |
+                          | <3758268> |
+                          | 3758      |
+        When Click on the Sayta daxil olmaq button
+        Then Verify warning Pop Up message for invalid data
+
