@@ -13,8 +13,7 @@ class BiznesPage(Page):
     _fillTopicField = By.ID, 'j-i-title'
     _clickOnBarter = By.XPATH, '//input[@class ="j-price-var priceexchange"]'
     _fillUserNameField = By.ID, 'j-i-name'
-    # _popUpMessageItem = By.ID, 'statusModal'
-    _popUpMessageItem = By.XPATH, '//*[text()="\nModerator tərəfindən yoxlamadan sonra elanıvız dərc olunacaq "]'
+    # _popUpMessageItem = By.XPATH, '//*[text()="\nModerator tərəfindən yoxlamadan sonra elanıvız dərc olunacaq "]'
     _clickOnSelectButtonCR_Biznes = By.XPATH, '//a[@data="{id:1767,pid:1,subs:1,title:\'Biznes\'}"]'
     _clickOnSelectButtonCR_HazirBiznes = By.XPATH, '//a[@data="{id:1768,pid:1767,subs:0,title:\'Hazır biznes\'}"]'
 
@@ -32,6 +31,7 @@ class BiznesPage(Page):
     _popUpErrQiymet = By.XPATH, '//*[text()="Qiyməti qeyd edin"]'
 
     def elan_yerleshdrimek(self):
+        sleep(2)
         self.click_on_element(*self._clickOnElanYerleshdirmek)
 
     def select_category_cr_item(self):
@@ -93,10 +93,6 @@ class BiznesPage(Page):
     def click_submit(self):
         self.click_on_element(*self._clickOnSubmit)
         sleep(5)
-
-    def element_visible(self):
-        status = self.find_element(*self._popUpMessageItem).is_displayed()
-        assert status is True
 
     def pop_up_visible_kateqoriya(self):
         status = self.find_element(*self._popUpErrKateqoriya).is_displayed()

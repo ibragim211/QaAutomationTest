@@ -57,11 +57,12 @@ class DasinmazEmlakPage(Page):
     _fillWhatsApp = By.NAME, 'contacts[whatsapp]'
     _fillElaqe = By.XPATH, '//input[@name="name"]'
     _clickElaniDercEtmek = By.XPATH, '//input[@value="Elanı dərc etmək"]'
-    # _popUpMessageItem = By.XPATH, '//img[@alt="added"]'
-    _elementItemIsVisible = By.XPATH, '//*[text()="\nModerator tərəfindən yoxlamadan sonra elanıvız dərc olunacaq "]'
+    _popUpMessageItem = By.ID, 'statusModal'
+    # _elementItemIsVisible = By.XPATH, '//*[text()="\nModerator tərəfindən yoxlamadan sonra elanıvız dərc olunacaq "]'
     _warningPopUpMessage = By.XPATH, '//*[text()="Forma doldurularkən bu səhvlər baş verdi:"]'
 
     def elan_yerlesdirmek_click(self):
+        sleep(2)
         self.click_on_element(*self._clickElanYerlesdirmek)
 
     def category_field_click(self):
@@ -74,7 +75,7 @@ class DasinmazEmlakPage(Page):
         self.click_on_element(*self._clickOptionMenziller)
 
     def city_field(self):
-        sleep(2)
+        sleep(1)
         self.click_on_element(*self._clickCityField)
 
     def city_baku(self):
@@ -209,14 +210,11 @@ class DasinmazEmlakPage(Page):
 
     def click_elan_derc(self):
         self.click_on_element(*self._clickElaniDercEtmek)
-        sleep(2)
-
-    # def pop_up_visible(self):
-    #     status = self.find_element(*self._popUpMessageItem).is_displayed()
-    #     assert status is True
+        sleep(1)
 
     def element_visible(self):
-        status = self.find_element(*self._elementItemIsVisible).is_displayed()
+        sleep(1)
+        status = self.find_element(*self._popUpMessageItem).is_displayed()
         assert status is True
 
     def warning_message(self):

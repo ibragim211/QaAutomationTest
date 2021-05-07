@@ -48,7 +48,7 @@ def click_submit(context): context.WebSite.Biznes_Page.click_submit()
 
 
 @Then('Then Verify element on the next page')
-def element_visible(context): context.WebSite.Biznes_Page.element_visible()
+def element_visible(context): context.WebSite.Dasinmaz_Emlak_Page.element_visible()
 
 
 @step('Fill {video_link} in to the Videoya keçid field')
