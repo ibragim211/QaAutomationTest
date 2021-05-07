@@ -17,9 +17,11 @@ def FillMail(context, mail): context.WebSite.Ev_Ve_Bag_Ucun_Without_Login_Page.F
 def click_rules_user(context): context.WebSite.Ev_Ve_Bag_Ucun_Without_Login_Page.click_rules_user()
 
 
-@Then('Then Verify element on the next page Login olmadan')
+@Then('Verify element on the next page Login olmadan')
 def pop_up_visible_NL(context): context.WebSite.Ev_Ve_Bag_Ucun_Without_Login_Page.pop_up_visible_NL()
 
 
 @Then('Verify warning Pop Up message Qeydiyyat nömrəsi')
 def pop_up_visible_NL_ErrPhone(context): context.WebSite.Ev_Ve_Bag_Ucun_Without_Login_Page.pop_up_visible_NL_ErrPhone()
+
+

@@ -13,8 +13,8 @@ class BiznesPage(Page):
     _fillTopicField = By.ID, 'j-i-title'
     _clickOnBarter = By.XPATH, '//input[@class ="j-price-var priceexchange"]'
     _fillUserNameField = By.ID, 'j-i-name'
-    # _popUpMessageItem = By.ID, 'statusModal'
-    _popUpMessageItem = By.XPATH, '//*[text()="\nModerator tərəfindən yoxlamadan sonra elanıvız dərc olunacaq "]'
+    _popUpMessageItem = By.ID, 'statusModal'
+    # _popUpMessageItem = By.XPATH, '//*[text()="\nModerator tərəfindən yoxlamadan sonra elanıvız dərc olunacaq "]'
     _clickOnSelectButtonCR_Biznes = By.XPATH, '//a[@data="{id:1767,pid:1,subs:1,title:\'Biznes\'}"]'
     _clickOnSelectButtonCR_HazirBiznes = By.XPATH, '//a[@data="{id:1768,pid:1767,subs:0,title:\'Hazır biznes\'}"]'
 
@@ -30,6 +30,10 @@ class BiznesPage(Page):
     _popUpErrSheher = By.XPATH, '//*[text()="Şəhəri qeyd edin"]'
     _popUpErrButunXana = By.XPATH, '//*[text()="Qeyd olunmuş bütün xanaları doldurun"]'
     _popUpErrQiymet = By.XPATH, '//*[text()="Qiyməti qeyd edin"]'
+
+    _popUpErrPrefix = By.XPATH, '//*[text()="Prefiksi düzgün qeyd edin"]'
+    _popUpErrMobil = By.XPATH, '//*[text()="Kontakt nömrəsi üçün prefiksi düzgün qeyd edin"]'
+    _popUpErrWhatsapp = By.XPATH, '//*[text()="Whatsapp üçün prefiksi düzgün qeyd edin"]'
 
     def elan_yerleshdrimek(self):
         self.click_on_element(*self._clickOnElanYerleshdirmek)
@@ -95,6 +99,7 @@ class BiznesPage(Page):
         sleep(5)
 
     def element_visible(self):
+        sleep(5)
         status = self.find_element(*self._popUpMessageItem).is_displayed()
         assert status is True
 
@@ -112,4 +117,16 @@ class BiznesPage(Page):
 
     def pop_up_visible_qiymet(self):
         status = self.find_element(*self._popUpErrQiymet).is_displayed()
+        assert status is True
+
+    def pop_up_visible_prefix(self):
+        status = self.find_element(*self._popUpErrPrefix).is_displayed()
+        assert status is True
+
+    def pop_up_visible_mobil_prefix(self):
+        status = self.find_element(*self._popUpErrMobil).is_displayed()
+        assert status is True
+
+    def pop_up_visible_whatsapp_prefix(self):
+        status = self.find_element(*self._popUpErrWhatsapp).is_displayed()
         assert status is True

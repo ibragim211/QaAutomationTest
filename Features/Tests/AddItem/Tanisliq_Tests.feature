@@ -13,9 +13,9 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Tanışlıq
-        And Select Oğlan qız axtarır
+        And Select service module
+        And Select Tanışlıq submodule
+        And Select Oğlan qız axtarır submodule
         And Fill Bakı in to the city field
         And Fill 10 in to the age field
         And Click Tanışlıq məqsədi
@@ -31,7 +31,7 @@
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill Miri in to the user_name field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Then Verify element on the next page
 
        @Authorization @Negative
@@ -40,9 +40,9 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Tanışlıq
-        And Select Oğlan qız axtarır
+        And Select service module
+        And Select Tanışlıq submodule
+        And Select Oğlan qız axtarır submodule
         And Fill   in to the city field
         And Fill 10 in to the age field
         And Click Tanışlıq məqsədi
@@ -55,7 +55,7 @@
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Verify warning Pop Up message Şəhər
 
 
@@ -65,9 +65,9 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Tanışlıq
-        And Select Oğlan qız axtarır
+        And Select service module
+        And Select Tanışlıq submodule
+        And Select Oğlan qız axtarır submodule
         And Fill Bakı in to the city field
         And Fill 10 in to the age field
         And Click Tanışlıq məqsədi
@@ -82,7 +82,7 @@
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
 
@@ -92,9 +92,9 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Tanışlıq
-        And Select Oğlan qız axtarır
+        And Select service module
+        And Select Tanışlıq submodule
+        And Select Oğlan qız axtarır submodule
         And Fill Bakı in to the city field
         And Fill 10 in to the age field
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
@@ -108,7 +108,7 @@
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill Miri in to the user_name field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
 
@@ -118,9 +118,9 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Tanışlıq
-        And Select Oğlan qız axtarır
+        And Select service module
+        And Select Tanışlıq submodule
+        And Select Oğlan qız axtarır submodule
         And Fill Bakı in to the city field
         And Click Tanışlıq məqsədi
         And Select Dostluq və ünsiyyət
@@ -135,5 +135,5 @@
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill Miri in to the user_name field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana

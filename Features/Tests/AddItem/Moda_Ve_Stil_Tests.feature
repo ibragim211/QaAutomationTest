@@ -12,14 +12,14 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Moda və stil
-        And Select Hədiyyə və süvenirlər
+        And Select service module
+        And Select Moda və stil submodule
+        And Select Hədiyyə və süvenirlər submodule
         And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
         And Select Vəziyyət
         And Click Vəziyyət option
-        And Click Barter
+        And Click Barter radio
         And Click Bölgələrə çatdırılma
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
@@ -32,7 +32,7 @@
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill Miri in to the user_name field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Then Verify element on the next page
 
        @Authorization @Negative
@@ -41,14 +41,14 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Moda və stil
-        And Select Hədiyyə və süvenirlər
+        And Select service module
+        And Select Moda və stil submodule
+        And Select Hədiyyə və süvenirlər submodule
         And Fill   in to the city field
         And Fill Elan Test in to the topic field
         And Select Vəziyyət
         And Click Vəziyyət option
-        And Click Barter
+        And Click Barter radio
         And Fill Miri in to the user_name field
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
@@ -57,7 +57,7 @@
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Verify warning Pop Up message Şəhər
 
      @Authorization @Negative
@@ -66,13 +66,13 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Moda və stil
-        And Select Hədiyyə və süvenirlər
+        And Select service module
+        And Select Moda və stil submodule
+        And Select Hədiyyə və süvenirlər submodule
         And Fill Bakı in to the city field
         And Select Vəziyyət
         And Click Vəziyyət option
-        And Click Barter
+        And Click Barter radio
         And Fill Miri in to the user_name field
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
@@ -84,7 +84,7 @@
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
      @Authorization @Negative
@@ -93,9 +93,9 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Moda və stil
-        And Select Hədiyyə və süvenirlər
+        And Select service module
+        And Select Moda və stil submodule
+        And Select Hədiyyə və süvenirlər submodule
         And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
         And Select Vəziyyət
@@ -111,7 +111,7 @@
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Verify warning Pop Up message Qiymət
 
      @Authorization @Negative
@@ -120,14 +120,14 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Moda və stil
-        And Select Hədiyyə və süvenirlər
+        And Select service module
+        And Select Moda və stil submodule
+        And Select Hədiyyə və süvenirlər submodule
         And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
         And Select Vəziyyət
         And Click Vəziyyət option
-        And Click Barter
+        And Click Barter radio
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
         And Select metro
@@ -138,7 +138,7 @@
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
         @Authorization @Negative
@@ -147,13 +147,13 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Moda və stil
-        And Select Hədiyyə və süvenirlər
+        And Select service module
+        And Select Moda və stil submodule
+        And Select Hədiyyə və süvenirlər submodule
         And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
         And Fill Miri in to the user_name field
-        And Click Barter
+        And Click Barter radio
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
         And Select metro
@@ -164,5 +164,5 @@
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
