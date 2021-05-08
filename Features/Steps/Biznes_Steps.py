@@ -44,17 +44,10 @@ def input_img(context, img): context.WebSite.Biznes_Page.input_img(img)
 @When('Click Elanı dərc et button')
 def click_submit(context): context.WebSite.Biznes_Page.click_submit()
 
-@Then('Verify element on the next page')
-def element_visible(context): context.WebSite.Biznes_Page.element_visible()
 
 @step('Fill {video_link} in to the Videoya keçid field')
 def FillVideo(context, video_link): context.WebSite.Biznes_Page.FillVideo(video_link)
 
-<<<<<<< HEAD
-=======
-@Then('Verify element on the next page')
-def element_visible(context): context.WebSite.Biznes_Page.element_visible()
->>>>>>> origin/Evgeniy
 
 @step('Fill {tesvir} in to the Təsvir field')
 def FillTesvir(context, tesvir): context.WebSite.Biznes_Page.FillTesvir(tesvir)

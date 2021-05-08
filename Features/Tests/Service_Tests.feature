@@ -1,12 +1,12 @@
-
+ @Service
     Feature: Add service
 
-     Background: Steps before authorization
+    Background: Steps before authorization
        Given Open Tut az
 #       When Close Pop up message
        Then Click on the Giris button
 
-      @Authorization @Positive
+       @Service @Positive
      Scenario: Add service to Item with Balans
         Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
@@ -19,7 +19,7 @@
         When Click Davam etmək
         Then Verify Service visible
 
-      @Authorization @Positive
+       @Service @Positive
      Scenario: Add service to Item with Bank Card
         Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
@@ -39,7 +39,7 @@
         And Click TUT.az saytına qayıt
         Then Verify Service visible
 
-      @Authorization @Positive
+       @Service @Positive
      Scenario: Add service to Item with Terminal
         Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field

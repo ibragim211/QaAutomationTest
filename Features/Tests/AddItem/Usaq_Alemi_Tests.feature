@@ -1,10 +1,10 @@
-@UŞAQ_ALƏMİ @PlaceAnAd
+ @UŞAQ_ALƏMİ @PlaceAnAd
     Feature: UŞAQ_ALƏMİ
 	In order to click on "Elan yerləşdirmək" button
 	As a user of Tut.az
 	I want to place an ad
 
-     Background: Steps before authorization
+    Background: Steps before authorization
        Given Open Tut az
 #      And Close Pop up message
        And Click on the Giris button
@@ -15,7 +15,7 @@
 
        @PlaceAnAd @UŞAQ_ALƏMİ @Positive
      Scenario: "UŞAQ_ALƏMİ" Place An Ad
-         And Click on the Kateqoriyanı seçin field
+         Given Click on the Kateqoriyanı seçin field
          And Click on the Usaq Alemi modul
          And Click on the Oyuncaqlar field
          And Click on the Şəhər field
@@ -40,11 +40,11 @@
          And Fill 510000009 in to the contact phone field
          And Fill 510000009 in to the whats up field
          When Click on the elani derc etmek button
-         Then Verify element on the next page
+         Then Verify element on the next page/pop up message
 
       @PlaceAnAd @UŞAQ_ALƏMİ @Negative
      Scenario: "UŞAQ_ALƏMİ" Place An Ad without Vəziyyəti field
-         And Click on the Kateqoriyanı seçin field
+         Given Click on the Kateqoriyanı seçin field
          And Click on the Usaq Alemi modul
          And Click on the Oyuncaqlar field
          And Click on the Şəhər field

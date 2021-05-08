@@ -1,13 +1,16 @@
- @Sign_Ip
-    Feature: Create Item Ev və bağ üçün
+ @EV_VƏ_BAĞ_ÜÇÜN_Without_Login @PlaceAnAd
+    Feature: EV_VƏ_BAĞ_ÜÇÜN_Without_Login
+    In order to click on "Elan yerləşdirmək" button
+	As a user of Tut.az
+	I want to place an ad
 
      Background: Steps before authorization
        Given Open Tut az
 #       When Close Pop up message
 #       Then Click on the Giris button
 
-      @Authorization @Positive
-     Scenario: Ev və bağ üçün Positive
+       @PlaceAnAd @EV_VƏ_BAĞ_ÜÇÜN_Without_Login @Positive
+      Scenario: Ev və bağ üçün Positive
         Given Click on the Elan yerləşdirmək button
         And Select service module
         And Select Ev və bağ üçün submodule
@@ -32,11 +35,10 @@
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
         And Click İstifadəçi razılaşması
         When Click Elanı dərc et button
-        Then Verify element on the next page Login olmadan
+        Then Verify element on the next page/pop up message
 
-
-    @Authorization @Negative
-     Scenario: Ev və bağ üçün Without Şəhər Negative
+       @PlaceAnAd @EV_VƏ_BAĞ_ÜÇÜN_Without_Login @Negative
+      Scenario: Ev və bağ üçün Without Şəhər Negative
         Given Click on the Elan yerləşdirmək button
         And Select service module
         And Select Ev və bağ üçün submodule
@@ -59,8 +61,8 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Şəhər
 
-     @Authorization @Negative
-     Scenario: Ev və bağ üçün Without Başlıq Negative
+       @PlaceAnAd @EV_VƏ_BAĞ_ÜÇÜN_Without_Login @Negative
+      Scenario: Ev və bağ üçün Without Başlıq Negative
         Given Click on the Elan yerləşdirmək button
         And Select service module
         And Select Ev və bağ üçün submodule
@@ -85,8 +87,8 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
-     @Authorization @Negative
-     Scenario: Ev və bağ üçün Without Qiymət Negative
+       @PlaceAnAd @EV_VƏ_BAĞ_ÜÇÜN_Without_Login @Negative
+      Scenario: Ev və bağ üçün Without Qiymət Negative
         Given Click on the Elan yerləşdirmək button
         And Select service module
         And Select Ev və bağ üçün submodule
@@ -111,7 +113,7 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Qiymət
 
-     @Authorization @Negative
+        @PlaceAnAd @EV_VƏ_BAĞ_ÜÇÜN_Without_Login @Negative
       Scenario: Ev və bağ üçün Without Əlaqədar Şəxs Negative
         Given Click on the Elan yerləşdirmək button
         And Select service module
@@ -137,7 +139,7 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
-        @Authorization @Negative
+        @PlaceAnAd @EV_VƏ_BAĞ_ÜÇÜN_Without_Login @Negative
       Scenario: Ev və bağ üçün Without İstifadəçi razılaşması Negative
         Given Click on the Elan yerləşdirmək button
         And Select service module
@@ -163,7 +165,7 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
-        @Authorization @Negative
+        @PlaceAnAd @EV_VƏ_BAĞ_ÜÇÜN_Without_Login @Negative
       Scenario: Ev və bağ üçün Without Qeydiyyat nömrəsi Negative
         Given Click on the Elan yerləşdirmək button
         And Select service module
@@ -188,8 +190,7 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Qeydiyyat nömrəsi
 
-
-        @Authorization @Negative
+        @PlaceAnAd @EV_VƏ_BAĞ_ÜÇÜN_Without_Login @Negative
       Scenario: Ev və bağ üçün Without E-mail ünvan Negative
         Given Click on the Elan yerləşdirmək button
         And Select service module
@@ -215,9 +216,8 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
-
-        @Authorization @Negative
-     Scenario: Ev və bağ üçün Wrong Prefix Mobil Negative
+       @PlaceAnAd @EV_VƏ_BAĞ_ÜÇÜN_Without_Login @Negative
+      Scenario: Ev və bağ üçün Wrong Prefix Mobil Negative
         Given Click on the Elan yerləşdirmək button
         And Select service module
         And Select Ev və bağ üçün submodule
@@ -244,8 +244,8 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Mobil Prefix
 
-        @Authorization @Negative
-     Scenario: Ev və bağ üçün Wrong Prefix Whatsapp Negative
+       @PlaceAnAd @EV_VƏ_BAĞ_ÜÇÜN_Without_Login @Negative
+      Scenario: Ev və bağ üçün Wrong Prefix Whatsapp Negative
         Given Click on the Elan yerləşdirmək button
         And Select service module
         And Select Ev və bağ üçün submodule

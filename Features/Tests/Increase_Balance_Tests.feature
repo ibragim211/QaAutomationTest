@@ -1,12 +1,12 @@
- @Increase_balance
+ @Increase_Balance
     Feature: Add service
 
-     Background: Steps before authorization
+    Background: Steps before authorization
        Given Open Tut az
 #       When Close Pop up message
        Then Click on the Giris button
 
-      @Authorization @Positive
+       @Increase_Balance @Positive
      Scenario: Increase balance with Bank Card
         Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
@@ -25,7 +25,7 @@
         When Click TUT.az saytına qayıt
         Then Verify Balance visible
 
-      @Authorization @Positive
+       @Increase_Balance @Positive
      Scenario: Increase balance with Terminal
         Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
