@@ -13,7 +13,10 @@ class BiznesPage(Page):
     _fillTopicField = By.ID, 'j-i-title'
     _clickOnBarter = By.XPATH, '//input[@class ="j-price-var priceexchange"]'
     _fillUserNameField = By.ID, 'j-i-name'
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/Evgeniy
     _popUpMessageItem = By.ID, 'statusModal'
     # _popUpMessageItem = By.XPATH, '//*[text()="\nModerator tərəfindən yoxlamadan sonra elanıvız dərc olunacaq "]'
     _clickOnSelectButtonCR_Biznes = By.XPATH, '//a[@data="{id:1767,pid:1,subs:1,title:\'Biznes\'}"]'
