@@ -6,8 +6,7 @@ def select_category_cr_item_Moda_Stil(context): context.WebSite.Moda_Ve_Stil_Pag
 
 
 @step('Select Hədiyyə və süvenirlər submodule')
-def select_category_cr_item_Hediyye_Suvenir(
-        context): context.WebSite.Moda_Ve_Stil_Page.select_category_cr_item_Hediyye_Suvenir()
+def select_category_cr_item_Hediyye_Suvenir(context): context.WebSite.Moda_Ve_Stil_Page.select_category_cr_item_Hediyye_Suvenir()
 
 
 @step('Select Vəziyyət')

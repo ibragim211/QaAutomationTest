@@ -9,7 +9,6 @@ class EvVeBagUcunWithoutLoginPage(Page):
     _popUpNL = By.XPATH, '//*[text()="\nElanınız yadda saxlanıldı, lakin hələ dərc olunmayıb. "]'
     _popUpNLErrPhone = By.XPATH, '//*[text()="Telefon nömrəsi düzgün qeyd olunmayıb"]'
 
-
     def click_register_number(self):
         self.click_on_element(*self._clickOnRegisterNumber)
 
@@ -29,4 +28,3 @@ class EvVeBagUcunWithoutLoginPage(Page):
     def pop_up_visible_NL_ErrPhone(self):
         status = self.find_element(*self._popUpNLErrPhone).is_displayed()
         assert status is True
-

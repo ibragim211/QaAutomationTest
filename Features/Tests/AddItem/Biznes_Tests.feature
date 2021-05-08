@@ -1,12 +1,15 @@
- @Sign_Ip
-    Feature: Create Item Biznes
+ @BIZNES @PlaceAnAd
+    Feature: BIZNES
+    In order to click on "Elan yerləşdirmək" button
+	As a user of Tut.az
+	I want to place an ad
 
-     Background: Steps before authorization
+    Background: Steps before authorization
        Given Open Tut az
 #       When Close Pop up message
        Then Click on the Giris button
 
-    @Authorization @Positive
+       @BIZNES @Positive
      Scenario: Biznes Positive
         Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
@@ -30,9 +33,9 @@
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
         When Click Elanı dərc et button
-        Then Then Verify element on the next page
+        Then Verify element on the next page/pop up message
 
-    @Authorization @Negative
+       @BIZNES @Negative
      Scenario: Biznes Without Kateqoriya Negative
         Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
@@ -54,9 +57,9 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Kateqoriya
 
-    @Authorization @Negative
+       @BIZNES @Negative
      Scenario: Biznes Without Şəhər Negative
-       Given Fill mirisahib97@gmail.com in to the email field
+        Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
@@ -77,9 +80,9 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Şəhər
 
-     @Authorization @Negative
+       @BIZNES @Negative
      Scenario: Biznes Without Başlıq Negative
-      Given Fill mirisahib97@gmail.com in to the email field
+        Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
@@ -102,9 +105,9 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
-     @Authorization @Negative
+       @BIZNES @Negative
      Scenario: Biznes Without Qiymət Negative
-       Given Fill mirisahib97@gmail.com in to the email field
+        Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
@@ -127,9 +130,9 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Qiymət
 
-     @Authorization @Negative
-      Scenario: Biznes Without Əlaqədar Şəxs Negative
-       Given Fill mirisahib97@gmail.com in to the email field
+       @BIZNES @Negative
+     Scenario: Biznes Without Əlaqədar Şəxs Negative
+        Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
@@ -152,7 +155,7 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
-        @Authorization @Negative
+       @BIZNES @Negative
      Scenario: Biznes Wrong Prefix Mobil Negative
         Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
@@ -179,7 +182,7 @@
         Then Verify warning Pop Up message Mobil Prefix
 
 
-       @Authorization @Negative
+       @BIZNES @Negative
      Scenario: Biznes Wrong Prefix Whatsapp Negative
         Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field

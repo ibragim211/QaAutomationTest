@@ -1,12 +1,15 @@
- @Sign_Ip
-    Feature: Create Item Vakansiyalar
+ @VAKANSİYALAR @PlaceAnAd
+    Feature: VAKANSİYALAR
+	In order to click on "Elan yerləşdirmək" button
+	As a user of Tut.az
+	I want to place an ad
 
-     Background: Steps before authorization
+    Background: Steps before authorization
        Given Open Tut az
 #       When Close Pop up message
        Then Click on the Giris button
 
-
+       @PlaceAnAd @VAKANSİYALAR @Positive
      Scenario: Vakansiyalar Positive
         Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
@@ -44,12 +47,11 @@
         And Fill Miri in to the user_name field
         And Fill C:\pythonProject\Features\Photos\Test.jpg in to the img field
         When Click Elanı dərc et button
-        Then Then Verify element on the next page
+        Then Verify element on the next page/pop up message
 
-
-        @Authorization @Negative
+       @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without Şəhər Negative
-       Given Fill mirisahib97@gmail.com in to the email field
+        Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
@@ -84,9 +86,9 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Şəhər
 
-     @Authorization @Negative
+       @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without Başlıq Negative
-      Given Fill mirisahib97@gmail.com in to the email field
+        Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
@@ -94,7 +96,7 @@
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
         And Fill Bakı in to the city field
-         And Click Təhsil
+        And Click Təhsil
         And Select Ali
         And Click İş təcrübəsi
         And Select Təcrübəsiz
@@ -123,10 +125,9 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
-
-     @Authorization @Negative
-      Scenario: Biznes Without Əlaqədar Şəxs Negative
-       Given Fill mirisahib97@gmail.com in to the email field
+       @PlaceAnAd @VAKANSİYALAR @Negative
+     Scenario: Biznes Without Əlaqədar Şəxs Negative
+        Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
@@ -163,10 +164,9 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
-
-       @Authorization @Negative
-      Scenario: Biznes Without Təhsil Negative
-       Given Fill mirisahib97@gmail.com in to the email field
+       @PlaceAnAd @VAKANSİYALAR @Negative
+     Scenario: Biznes Without Təhsil Negative
+        Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
@@ -203,9 +203,9 @@
         Then Verify warning Pop Up message Bütün xana
 
 
-       @Authorization @Negative
-      Scenario: Biznes Without İş təcrübəsi Negative
-       Given Fill mirisahib97@gmail.com in to the email field
+       @PlaceAnAd @VAKANSİYALAR @Negative
+     Scenario: Biznes Without İş təcrübəsi Negative
+        Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
@@ -214,7 +214,7 @@
         And Select İş axtarıram submodule
         And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
-         And Click Təhsil
+        And Click Təhsil
         And Select Ali
         And Click Yaş
         And Select 20
@@ -241,9 +241,9 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
-        @Authorization @Negative
-      Scenario: Biznes Without Yaş Negative
-       Given Fill mirisahib97@gmail.com in to the email field
+       @PlaceAnAd @VAKANSİYALAR @Negative
+     Scenario: Biznes Without Yaş Negative
+        Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
@@ -279,10 +279,9 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
-
-       @Authorization @Negative
-      Scenario: Biznes Without Fəaliyyət sahəsi Negative
-       Given Fill mirisahib97@gmail.com in to the email field
+       @PlaceAnAd @VAKANSİYALAR @Negative
+     Scenario: Biznes Without Fəaliyyət sahəsi Negative
+        Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
@@ -316,10 +315,8 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
-
-        @Authorization @Negative
-      Scenario: Biznes Without İşin növü Negative
-       Given Fill mirisahib97@gmail.com in to the email field
+       @PlaceAnAd @VAKANSİYALAR @Negative
+     Scenario: Biznes Without İşin növü NegativeGiven Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
@@ -328,7 +325,7 @@
         And Select İş axtarıram submodule
         And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
-         And Click Təhsil
+        And Click Təhsil
         And Select Ali
         And Click İş təcrübəsi
         And Select Təcrübəsiz
@@ -355,9 +352,9 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
-        @Authorization @Negative
-      Scenario: Biznes Without İş qrafiki Negative
-       Given Fill mirisahib97@gmail.com in to the email field
+       @PlaceAnAd @VAKANSİYALAR @Negative
+     Scenario: Biznes Without İş qrafiki Negative
+        Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
@@ -366,7 +363,7 @@
         And Select İş axtarıram submodule
         And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
-         And Click Təhsil
+        And Click Təhsil
         And Select Ali
         And Click İş təcrübəsi
         And Select Təcrübəsiz
@@ -393,9 +390,9 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
-         @Authorization @Negative
-      Scenario: Biznes Without Əmək haqqı Negative
-       Given Fill mirisahib97@gmail.com in to the email field
+       @PlaceAnAd @VAKANSİYALAR @Negative
+     Scenario: Biznes Without Əmək haqqı Negative
+        Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button

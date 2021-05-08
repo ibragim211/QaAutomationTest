@@ -1,4 +1,4 @@
-@NƏQLİYYAT @PlaceAnAd
+ @NƏQLİYYAT @PlaceAnAd
     Feature: NƏQLİYYAT
 	In order to click on "Elan yerləşdirmək" button
 	As a user of Tut.az
@@ -13,9 +13,9 @@
        When Click on the Sayta daxil olmaq button
        And Click on the Elan yerləşdirmək button
 
-       @PlaceAnAd @NƏQLİYYAT @Positive
-     Scenario: "NƏQLİYYAT" Place An Ad
-        And Click on the Kateqoriyanı seçin field
+        @PlaceAnAd @NƏQLİYYAT @Positive
+      Scenario: "NƏQLİYYAT" Place An Ad
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Nəqliyyat modul
         And Click on the Minik avtomobilləri sub-modul
         And Click on the BMW sub-modul
@@ -73,11 +73,11 @@
         And Fill 510000009 in to the whats up field
         When Click on the elani derc etmek button
 #        Then Verify pop up message by element
-        Then Verify element on the next page
+        Then Verify element on the next page/pop up message
 
-       @PlaceAnAd @NƏQLİYYAT @Negative
-     Scenario: "NƏQLİYYAT" Place An Ad without Elan Yerles field
-        And Click on the Kateqoriyanı seçin field
+        @PlaceAnAd @NƏQLİYYAT @Negative
+      Scenario: "NƏQLİYYAT" Place An Ad without Elan Yerles field
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Nəqliyyat modul
         And Click on the Minik avtomobilləri sub-modul
         And Click on the BMW sub-modul
@@ -137,9 +137,9 @@
 #        Then Verify pop up message by element
         Then Verify warning message "fill all fields"
 
-       @PlaceAnAd @NƏQLİYYAT @Negative
-     Scenario: "NƏQLİYYAT" Place An Ad without Model field
-        And Click on the Kateqoriyanı seçin field
+        @PlaceAnAd @NƏQLİYYAT @Negative
+      Scenario: "NƏQLİYYAT" Place An Ad without Model field
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Nəqliyyat modul
         And Click on the Minik avtomobilləri sub-modul
         And Click on the BMW sub-modul
@@ -199,9 +199,9 @@
 #        Then Verify pop up message by element
         Then Verify warning message "fill all fields"
 
-       @PlaceAnAd @NƏQLİYYAT @Negative
-     Scenario: "NƏQLİYYAT" Place An Ad without Ban novu field
-        And Click on the Kateqoriyanı seçin field
+        @PlaceAnAd @NƏQLİYYAT @Negative
+      Scenario: "NƏQLİYYAT" Place An Ad without Ban novu field
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Nəqliyyat modul
         And Click on the Minik avtomobilləri sub-modul
         And Click on the BMW sub-modul
@@ -261,9 +261,9 @@
 #        Then Verify pop up message by element
         Then Verify warning message "fill all fields"
 
-       @PlaceAnAd @NƏQLİYYAT @Negative
-     Scenario: "NƏQLİYYAT" Place An Ad without buraxlis il field
-        And Click on the Kateqoriyanı seçin field
+        @PlaceAnAd @NƏQLİYYAT @Negative
+      Scenario: "NƏQLİYYAT" Place An Ad without buraxlis il field
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Nəqliyyat modul
         And Click on the Minik avtomobilləri sub-modul
         And Click on the BMW sub-modul
@@ -323,9 +323,9 @@
 #        Then Verify pop up message by element
         Then Verify warning message "fill all fields"
 
-       @PlaceAnAd @NƏQLİYYAT @Negative
-     Scenario: "NƏQLİYYAT" Place An Ad without Mühərrikin həcmi field
-        And Click on the Kateqoriyanı seçin field
+        @PlaceAnAd @NƏQLİYYAT @Negative
+      Scenario: "NƏQLİYYAT" Place An Ad without Mühərrikin həcmi field
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Nəqliyyat modul
         And Click on the Minik avtomobilləri sub-modul
         And Click on the BMW sub-modul
@@ -385,9 +385,9 @@
 #        Then Verify pop up message by element
         Then Verify warning message "fill all fields"
 
-       @PlaceAnAd @NƏQLİYYAT @Negative
-     Scenario: "NƏQLİYYAT" Place An Ad without Mühərrikin gücü field
-        And Click on the Kateqoriyanı seçin field
+        @PlaceAnAd @NƏQLİYYAT @Negative
+      Scenario: "NƏQLİYYAT" Place An Ad without Mühərrikin gücü field
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Nəqliyyat modul
         And Click on the Minik avtomobilləri sub-modul
         And Click on the BMW sub-modul
@@ -447,9 +447,9 @@
 #        Then Verify pop up message by element
         Then Verify warning message "fill all fields"
 
-       @PlaceAnAd @NƏQLİYYAT @Negative
-     Scenario: "NƏQLİYYAT" Place An Ad without Yürüş field
-        And Click on the Kateqoriyanı seçin field
+        @PlaceAnAd @NƏQLİYYAT @Negative
+      Scenario: "NƏQLİYYAT" Place An Ad without Yürüş field
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Nəqliyyat modul
         And Click on the Minik avtomobilləri sub-modul
         And Click on the BMW sub-modul
@@ -509,9 +509,9 @@
 #        Then Verify pop up message by element
         Then Verify warning message "fill all fields"
 
-       @PlaceAnAd @NƏQLİYYAT @Negative
-     Scenario: "NƏQLİYYAT" Place An Ad without Oturmeler Qutusu field
-        And Click on the Kateqoriyanı seçin field
+        @PlaceAnAd @NƏQLİYYAT @Negative
+      Scenario: "NƏQLİYYAT" Place An Ad without Oturmeler Qutusu field
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Nəqliyyat modul
         And Click on the Minik avtomobilləri sub-modul
         And Click on the BMW sub-modul
@@ -571,9 +571,9 @@
 #        Then Verify pop up message by element
         Then Verify warning message "fill all fields"
 
-       @PlaceAnAd @NƏQLİYYAT @Negative
-     Scenario: "NƏQLİYYAT" Place An Ad without oturucu field
-        And Click on the Kateqoriyanı seçin field
+        @PlaceAnAd @NƏQLİYYAT @Negative
+      Scenario: "NƏQLİYYAT" Place An Ad without oturucu field
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Nəqliyyat modul
         And Click on the Minik avtomobilləri sub-modul
         And Click on the BMW sub-modul
@@ -633,9 +633,9 @@
 #        Then Verify pop up message by element
         Then Verify warning message "fill all fields"
 
-       @PlaceAnAd @NƏQLİYYAT @Negative
-     Scenario: "NƏQLİYYAT" Place An Ad without Renq field
-        And Click on the Kateqoriyanı seçin field
+        @PlaceAnAd @NƏQLİYYAT @Negative
+      Scenario: "NƏQLİYYAT" Place An Ad without Renq field
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Nəqliyyat modul
         And Click on the Minik avtomobilləri sub-modul
         And Click on the BMW sub-modul
@@ -695,9 +695,9 @@
 #        Then Verify pop up message by element
         Then Verify warning message "fill all fields"
 
-       @PlaceAnAd @NƏQLİYYAT @Negative
-     Scenario: "NƏQLİYYAT" Place An Ad without azn field
-        And Click on the Kateqoriyanı seçin field
+        @PlaceAnAd @NƏQLİYYAT @Negative
+      Scenario: "NƏQLİYYAT" Place An Ad without azn field
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Nəqliyyat modul
         And Click on the Minik avtomobilləri sub-modul
         And Click on the BMW sub-modul
@@ -757,9 +757,9 @@
 #        Then Verify pop up message by element
         Then Verify warning message "fill all fields"
 
-          @PlaceAnAd @NƏQLİYYAT @Negative
-     Scenario: "NƏQLİYYAT" Place An Ad without Əlaqədar şəxs field
-        And Click on the Kateqoriyanı seçin field
+        @PlaceAnAd @NƏQLİYYAT @Negative
+      Scenario: "NƏQLİYYAT" Place An Ad without Əlaqədar şəxs field
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Nəqliyyat modul
         And Click on the Minik avtomobilləri sub-modul
         And Click on the BMW sub-modul
