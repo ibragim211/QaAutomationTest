@@ -66,6 +66,7 @@ class DasinmazEmlakPage(Page):
         self.click_on_element(*self._clickElanYerlesdirmek)
 
     def category_field_click(self):
+        sleep(1)
         self.click_on_element(*self._clickCategoryField)
 
     def category_option(self):

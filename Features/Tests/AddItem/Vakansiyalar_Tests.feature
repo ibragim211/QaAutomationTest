@@ -12,9 +12,9 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Vakansiya
-        And Select İş axtarıram
+        And Select service module
+        And Select Vakansiya submodule
+        And Select İş axtarıram submodule
         And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
         And Click Təhsil
@@ -43,7 +43,7 @@
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill Miri in to the user_name field
         And Fill C:\pythonProject\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Then Verify element on the next page
 
 
@@ -53,9 +53,9 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Vakansiya
-        And Select İş axtarıram
+        And Select service module
+        And Select Vakansiya submodule
+        And Select İş axtarıram submodule
         And Fill     in to the city field
         And Fill Elan Test in to the topic field
         And Click Təhsil
@@ -81,7 +81,7 @@
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Verify warning Pop Up message Şəhər
 
      @Authorization @Negative
@@ -90,9 +90,9 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Vakansiya
-        And Select İş axtarıram
+        And Select service module
+        And Select Vakansiya submodule
+        And Select İş axtarıram submodule
         And Fill Bakı in to the city field
          And Click Təhsil
         And Select Ali
@@ -120,7 +120,7 @@
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
 
@@ -130,9 +130,9 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Vakansiya
-        And Select İş axtarıram
+        And Select service module
+        And Select Vakansiya submodule
+        And Select İş axtarıram submodule
         And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
          And Click Təhsil
@@ -160,7 +160,7 @@
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
 
@@ -170,9 +170,9 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Vakansiya
-        And Select İş axtarıram
+        And Select service module
+        And Select Vakansiya submodule
+        And Select İş axtarıram submodule
         And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
         And Click İş təcrübəsi
@@ -199,7 +199,7 @@
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
 
@@ -209,9 +209,9 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Vakansiya
-        And Select İş axtarıram
+        And Select service module
+        And Select Vakansiya submodule
+        And Select İş axtarıram submodule
         And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
          And Click Təhsil
@@ -238,7 +238,7 @@
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
         @Authorization @Negative
@@ -247,9 +247,9 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Vakansiya
-        And Select İş axtarıram
+        And Select service module
+        And Select Vakansiya submodule
+        And Select İş axtarıram submodule
         And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
          And Click Təhsil
@@ -276,7 +276,7 @@
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
 
@@ -286,9 +286,9 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Vakansiya
-        And Select İş axtarıram
+        And Select service module
+        And Select Vakansiya submodule
+        And Select İş axtarıram submodule
         And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
         And Click Təhsil
@@ -313,7 +313,7 @@
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
 
@@ -323,9 +323,9 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Vakansiya
-        And Select İş axtarıram
+        And Select service module
+        And Select Vakansiya submodule
+        And Select İş axtarıram submodule
         And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
          And Click Təhsil
@@ -352,7 +352,7 @@
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
         @Authorization @Negative
@@ -361,9 +361,9 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Vakansiya
-        And Select İş axtarıram
+        And Select service module
+        And Select Vakansiya submodule
+        And Select İş axtarıram submodule
         And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
          And Click Təhsil
@@ -390,7 +390,7 @@
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
          @Authorization @Negative
@@ -399,9 +399,9 @@
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
-        And Select service
-        And Select Vakansiya
-        And Select İş axtarıram
+        And Select service module
+        And Select Vakansiya submodule
+        And Select İş axtarıram submodule
         And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
          And Click Təhsil
@@ -429,5 +429,5 @@
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
-        When Click Elanı dərc et
+        When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana

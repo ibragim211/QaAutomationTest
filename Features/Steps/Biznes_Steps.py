@@ -9,19 +9,17 @@ def elan_yerleshdrimek(context): context.WebSite.Biznes_Page.elan_yerleshdrimek(
 def daxil_ol_click(context): context.WebSite.Sign_In_Page.daxil_ol_click()
 
 
-@step('Select service')
+@step('Select service module')
 def select_category_cr_item(context): context.WebSite.Biznes_Page.select_category_cr_item()
 
 
-@step('Select Biznes')
+@step('Select Biznes submodule')
 def select_category_cr_item_Biznes(context): context.WebSite.Biznes_Page.select_category_cr_item_Biznes()
 
 
-@step('Select Hazır biznes')
+@step('Select Hazır biznes submodule')
 def select_category_cr_item_Hazir_biznes(context): context.WebSite.Biznes_Page.select_category_cr_item_Hazir_biznes()
 
-
-# Biznes
 
 @step('Fill {city} in to the city field')
 def select_city_cr_item(context, city): context.WebSite.Biznes_Page.select_city_cr_item(city)
@@ -31,7 +29,7 @@ def select_city_cr_item(context, city): context.WebSite.Biznes_Page.select_city_
 def FillTopic(context, topic): context.WebSite.Biznes_Page.FillTopic(topic)
 
 
-@step('Click Barter')
+@step('Click Barter radio')
 def click_barter(context): context.WebSite.Biznes_Page.click_barter()
 
 
@@ -43,12 +41,8 @@ def FillUserName(context, user_name): context.WebSite.Biznes_Page.FillUserName(u
 def input_img(context, img): context.WebSite.Biznes_Page.input_img(img)
 
 
-@When('Click Elanı dərc et')
+@When('Click Elanı dərc et button')
 def click_submit(context): context.WebSite.Biznes_Page.click_submit()
-
-
-@Then('Then Verify element on the next page')
-def element_visible(context): context.WebSite.Dasinmaz_Emlak_Page.element_visible()
 
 
 @step('Fill {video_link} in to the Videoya keçid field')
@@ -87,8 +81,6 @@ def select_metro_way(context): context.WebSite.Biznes_Page.select_metro_way()
 def select_metro_Qarayev(context): context.WebSite.Biznes_Page.select_metro_Qarayev()
 
 
-# Biznes
-
 @Then('Verify warning Pop Up message Kateqoriya')
 def pop_up_visible_kateqoriya(context): context.WebSite.Biznes_Page.pop_up_visible_kateqoriya()
 
@@ -103,3 +95,15 @@ def pop_up_visible_butun_xana(context): context.WebSite.Biznes_Page.pop_up_visib
 
 @Then('Verify warning Pop Up message Qiymət')
 def pop_up_visible_qiymet(context): context.WebSite.Biznes_Page.pop_up_visible_qiymet()
+
+
+@Then('Verify warning Pop Up message Prefix')
+def pop_up_visible_prefix(context): context.WebSite.Biznes_Page.pop_up_visible_prefix()
+
+
+@Then('Verify warning Pop Up message Mobil Prefix')
+def pop_up_visible_mobil_prefix(context): context.WebSite.Biznes_Page.pop_up_visible_mobil_prefix()
+
+
+@Then('Verify warning Pop Up message Whatsapp Prefix')
+def pop_up_visible_whatsapp_prefix(context): context.WebSite.Biznes_Page.pop_up_visible_whatsapp_prefix()
