@@ -1,6 +1,5 @@
 from Features.Base_Page import Page
 from selenium.webdriver.common.by import By
-
 from time import sleep
 
 
@@ -13,11 +12,8 @@ class BiznesPage(Page):
     _fillTopicField = By.ID, 'j-i-title'
     _clickOnBarter = By.XPATH, '//input[@class ="j-price-var priceexchange"]'
     _fillUserNameField = By.ID, 'j-i-name'
-    _popUpMessageItem = By.ID, 'statusModal'
-    # _popUpMessageItem = By.XPATH, '//*[text()="\nModerator tərəfindən yoxlamadan sonra elanıvız dərc olunacaq "]'
     _clickOnSelectButtonCR_Biznes = By.XPATH, '//a[@data="{id:1767,pid:1,subs:1,title:\'Biznes\'}"]'
     _clickOnSelectButtonCR_HazirBiznes = By.XPATH, '//a[@data="{id:1768,pid:1767,subs:0,title:\'Hazır biznes\'}"]'
-
     _fillDescrField = By.ID, 'j-i-descr'
     _fillVideoField = By.NAME, 'video'
     _clickOnSelectButtonCR_Metro = By.XPATH, '//a[@class="ajax ajax-ico j-geo-metro-link"]'
@@ -25,12 +21,10 @@ class BiznesPage(Page):
     _clickOnSelectButtonCR_Metro_Qarayev = By.XPATH, '//a[@data="{id:457,branch:464,city:9064}"]'
     _fillPhoneNumberField = By.NAME, 'phones[1]'
     _fillWhatsappField = By.NAME, 'contacts[whatsapp]'
-
     _popUpErrKateqoriya = By.XPATH, '//*[text()="Kateqoriya düzgün qeyd olunmayıb"]'
     _popUpErrSheher = By.XPATH, '//*[text()="Şəhəri qeyd edin"]'
     _popUpErrButunXana = By.XPATH, '//*[text()="Qeyd olunmuş bütün xanaları doldurun"]'
     _popUpErrQiymet = By.XPATH, '//*[text()="Qiyməti qeyd edin"]'
-
     _popUpErrPrefix = By.XPATH, '//*[text()="Prefiksi düzgün qeyd edin"]'
     _popUpErrMobil = By.XPATH, '//*[text()="Kontakt nömrəsi üçün prefiksi düzgün qeyd edin"]'
     _popUpErrWhatsapp = By.XPATH, '//*[text()="Whatsapp üçün prefiksi düzgün qeyd edin"]'

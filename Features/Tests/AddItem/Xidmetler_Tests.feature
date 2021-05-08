@@ -1,10 +1,10 @@
-@XİDMƏTLƏR @PlaceAnAd
+ @XİDMƏTLƏR @PlaceAnAd
     Feature: XİDMƏTLƏR
 	In order to click on "Elan yerləşdirmək" button
 	As a user of Tut.az
 	I want to place an ad
 
-     Background: Steps before authorization
+    Background: Steps before authorization
        Given Open Tut az
 #       And Close Pop up message
        And Click on the Giris button
@@ -15,7 +15,7 @@
 
        @PlaceAnAd @XİDMƏTLƏR @Positive
      Scenario: "XİDMƏTLƏR" Place An Ad
-         And Click on the Kateqoriyanı seçin field
+         Given Click on the Kateqoriyanı seçin field
          And Click on the Xidmetler modul
          And Click on the Nəqliyyat sifarişi və kirayəsi option
          And Click on the Şəhər field
@@ -35,11 +35,11 @@
          And Fill 510000009 in to the contact phone field
          And Fill 510000009 in to the whats up field
          When Click on the elani derc etmek button
-         Then Verify element on the next page
+         Then Verify element on the next page/pop up message
 
        @PlaceAnAd @XİDMƏTLƏR @Negative
      Scenario: "XİDMƏTLƏR" Place An Ad without Başlıq field
-         And Click on the Kateqoriyanı seçin field
+         Given Click on the Kateqoriyanı seçin field
          And Click on the Xidmetler modul
          And Click on the Nəqliyyat sifarişi və kirayəsi option
          And Click on the Şəhər field
@@ -63,7 +63,7 @@
 
        @PlaceAnAd @XİDMƏTLƏR @Negative
      Scenario: "XİDMƏTLƏR" Place An Ad without Əlaqədar şəxs field
-         And Click on the Kateqoriyanı seçin field
+         Given Click on the Kateqoriyanı seçin field
          And Click on the Xidmetler modul
          And Click on the Nəqliyyat sifarişi və kirayəsi option
          And Click on the Şəhər field

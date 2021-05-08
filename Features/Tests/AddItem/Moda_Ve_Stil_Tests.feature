@@ -1,13 +1,16 @@
- @Sign_Ip
-    Feature: Create Item ModaStil
+ @MODA_VƏ_STİL @PlaceAnAd
+    Feature: MODA_VƏ_STİL
+    In order to click on "Elan yerləşdirmək" button
+	As a user of Tut.az
+	I want to place an ad
 
      Background: Steps before authorization
        Given Open Tut az
 #       When Close Pop up message
        Then Click on the Giris button
 
-      @Authorization @Positive
-     Scenario: ModaStil Positive
+        @PlaceAnAd @MODA_VƏ_STİL @Positive
+      Scenario: ModaStil Positive
         Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
@@ -33,9 +36,9 @@
         And Fill Miri in to the user_name field
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
         When Click Elanı dərc et button
-        Then Then Verify element on the next page
+        Then Verify element on the next page/pop up message
 
-       @Authorization @Negative
+       @PlaceAnAd @MODA_VƏ_STİL @Negative
      Scenario: ModaStil Without Şəhər Negative
        Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
@@ -60,9 +63,9 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Şəhər
 
-     @Authorization @Negative
-     Scenario: ModaStil Without Başlıq Negative
-      Given Fill mirisahib97@gmail.com in to the email field
+        @PlaceAnAd @MODA_VƏ_STİL @Negative
+      Scenario: ModaStil Without Başlıq Negative
+        Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
@@ -87,9 +90,9 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
-     @Authorization @Negative
-     Scenario: ModaStil Without Qiymət Negative
-       Given Fill mirisahib97@gmail.com in to the email field
+        @PlaceAnAd @MODA_VƏ_STİL @Negative
+      Scenario: ModaStil Without Qiymət Negative
+        Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
@@ -114,9 +117,9 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Qiymət
 
-     @Authorization @Negative
-      Scenario: ModaStil Without Əlaqədar Şəxs Negative
-       Given Fill mirisahib97@gmail.com in to the email field
+         @PlaceAnAd @MODA_VƏ_STİL @Negative
+       Scenario: ModaStil Without Əlaqədar Şəxs Negative
+        Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button
@@ -141,9 +144,9 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
-        @Authorization @Negative
-      Scenario: ModaStil Without Vəziyyət Negative
-       Given Fill mirisahib97@gmail.com in to the email field
+         @PlaceAnAd @MODA_VƏ_STİL @Negative
+       Scenario: ModaStil Without Vəziyyət Negative
+        Given Fill mirisahib97@gmail.com in to the email field
         And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         Given Click on the Elan yerləşdirmək button

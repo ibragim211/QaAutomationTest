@@ -1,4 +1,4 @@
-@ELEKTRONIKA_VE_TEXNIKA @PlaceAnAd
+ @ELEKTRONIKA_VE_TEXNIKA @PlaceAnAd
     Feature: ELEKTRONIKA_VE_TEXNIKA
 	In order to click on "Elan yerləşdirmək" button
 	As a user of Tut.az
@@ -15,7 +15,7 @@
 
        @PlaceAnAd @ELEKTRONIKA_VE_TEXNIKA @Positive
      Scenario: "ELEKTRONIKA_VE_TEXNIKA" Place An Ad
-        And Click on the Kateqoriyanı seçin field
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Elektron ve texnikasi modul
         And Click on the Komputer texnikasi modul
         And Click on the Monitorlar option
@@ -42,11 +42,11 @@
         And Fill 510000009 in to the contact phone field
         And Fill 510000009 in to the whats up field
         When Click on the elani derc etmek button
-        Then Verify element on the next page
+        Then Verify element on the next page/pop up message
 
        @PlaceAnAd @ELEKTRONIKA_VE_TEXNIKA @Negative
      Scenario: "ELEKTRONIKA_VE_TEXNIKA" Place An Ad without Başlıq field
-        And Click on the Kateqoriyanı seçin field
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Elektron ve texnikasi modul
         And Click on the Komputer texnikasi modul
         And Click on the Monitorlar option
@@ -77,7 +77,7 @@
 
        @PlaceAnAd @ELEKTRONIKA_VE_TEXNIKA @Negative
      Scenario: "ELEKTRONIKA_VE_TEXNIKA" Place An Ad without Ekranın ölçüsü field
-        And Click on the Kateqoriyanı seçin field
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Elektron ve texnikasi modul
         And Click on the Komputer texnikasi modul
         And Click on the Monitorlar option
@@ -106,10 +106,9 @@
         When Click on the elani derc etmek button
         Then Verify warning message "fill all fields"
 
-
        @PlaceAnAd @ELEKTRONIKA_VE_TEXNIKA @Negative
      Scenario: "ELEKTRONIKA_VE_TEXNIKA" Place An Ad without Vəziyyəti field
-        And Click on the Kateqoriyanı seçin field
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Elektron ve texnikasi modul
         And Click on the Komputer texnikasi modul
         And Click on the Monitorlar option
@@ -140,7 +139,7 @@
 
        @PlaceAnAd @ELEKTRONIKA_VE_TEXNIKA @Negative
      Scenario: "ELEKTRONIKA_VE_TEXNIKA" Place An Ad without Əlaqədar şəxs field
-        And Click on the Kateqoriyanı seçin field
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Elektron ve texnikasi modul
         And Click on the Komputer texnikasi modul
         And Click on the Monitorlar option

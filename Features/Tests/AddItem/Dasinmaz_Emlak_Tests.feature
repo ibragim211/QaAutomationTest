@@ -1,4 +1,4 @@
-@DAŞINMAZ_ƏMLAK @PlaceAnAd
+ @DAŞINMAZ_ƏMLAK @PlaceAnAd
     Feature: DAŞINMAZ_ƏMLAK
 	In order to click on "Elan yerləşdirmək" button
 	As a user of Tut.az
@@ -65,9 +65,7 @@
         And Fill 510000009 in to the contact phone field
         And Fill 510000009 in to the whats up field
         When Click on the elani derc etmek button
-#        Then Verify pop up message by element
-        Then Verify element on the next page
-
+        Then Verify element on the next page/pop up message
 
        @PlaceAnAd @DAŞINMAZ_ƏMLAK @Negative
      Scenario: "DAŞINMAZ_ƏMLAK" Place An Ad without elanın növü field
@@ -124,7 +122,6 @@
 #       Then Verify pop up message by element
         Then Verify warning message "fill all fields"
 
-
        @PlaceAnAd @DAŞINMAZ_ƏMLAK @Negative
      Scenario: "DAŞINMAZ_ƏMLAK" Place An Ad without Binanın növü field
         Given Click on the Kateqoriyanı seçin field
@@ -179,7 +176,6 @@
         When Click on the elani derc etmek button
 #       Then Verify pop up message by element
         Then Verify warning message "fill all fields"
-
 
        @PlaceAnAd @DAŞINMAZ_ƏMLAK @Negative
      Scenario: "DAŞINMAZ_ƏMLAK" Place An Ad without Unvan field
@@ -291,7 +287,6 @@
 #        Then Verify pop up message by element
         Then Verify warning message "fill all fields"
 
-
        @PlaceAnAd @DAŞINMAZ_ƏMLAK @Negative
      Scenario: "DAŞINMAZ_ƏMLAK" Place An Ad without mertebe field
         Given Click on the Kateqoriyanı seçin field
@@ -402,7 +397,6 @@
 #        Then Verify pop up message by element
         Then Verify warning message "fill all fields"
 
-
        @PlaceAnAd @DAŞINMAZ_ƏMLAK @Negative
      Scenario: "DAŞINMAZ_ƏMLAK" Place An Ad without Sahe field
         Given Click on the Kateqoriyanı seçin field
@@ -457,7 +451,6 @@
         When Click on the elani derc etmek button
 #        Then Verify pop up message by element
         Then Verify warning message "fill all fields"
-
 
        @PlaceAnAd @DAŞINMAZ_ƏMLAK @Negative
      Scenario: "DAŞINMAZ_ƏMLAK" Place An Ad without temir field
@@ -514,7 +507,6 @@
 #        Then Verify pop up message by element
         Then Verify warning message "fill all fields"
 
-
        @PlaceAnAd @DAŞINMAZ_ƏMLAK @Negative
      Scenario: "DAŞINMAZ_ƏMLAK" Place An Ad without azn field
         Given Click on the Kateqoriyanı seçin field
@@ -569,7 +561,6 @@
         When Click on the elani derc etmek button
 #        Then Verify pop up message by element
         Then Verify warning message "fill all fields"
-
 
        @PlaceAnAd @DAŞINMAZ_ƏMLAK @Negative
      Scenario: "DAŞINMAZ_ƏMLAK" Place An Ad without Əlaqədar şəxs field

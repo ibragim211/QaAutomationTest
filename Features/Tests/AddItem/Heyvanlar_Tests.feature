@@ -1,4 +1,4 @@
-@HEYVANLAR @PlaceAnAd
+ @HEYVANLAR @PlaceAnAd
     Feature: HEYVANLAR
 	In order to click on "Elan yerləşdirmək" button
 	As a user of Tut.az
@@ -14,8 +14,8 @@
        And Click on the Elan yerləşdirmək button
 
        @PlaceAnAd @HEYVANLAR @Positive
-     Scenario: "HEYVANLAR" Place An Ad
-        And Click on the Kateqoriyanı seçin field
+      Scenario: "HEYVANLAR" Place An Ad
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Heyvanlar modul
         And Click on the Itler modul
         And Click on the Alabay option
@@ -38,11 +38,11 @@
         And Fill 510000009 in to the contact phone field
         And Fill 510000009 in to the whats up field
         When Click on the elani derc etmek button
-        Then Verify element on the next page
+        Then Verify element on the next page/pop up message
 
        @PlaceAnAd @HEYVANLAR @Negative
-     Scenario: "HEYVANLAR" Place An Ad without Başlıq field
-        And Click on the Kateqoriyanı seçin field
+      Scenario: "HEYVANLAR" Place An Ad without Başlıq field
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Heyvanlar modul
         And Click on the Itler modul
         And Click on the Alabay option
@@ -68,8 +68,8 @@
         Then Verify warning message "fill all fields"
 
        @PlaceAnAd @HEYVANLAR @Negative
-     Scenario: "HEYVANLAR" Place An Ad without azn field
-        And Click on the Kateqoriyanı seçin field
+      Scenario: "HEYVANLAR" Place An Ad without azn field
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Heyvanlar modul
         And Click on the Itler modul
         And Click on the Alabay option
@@ -95,8 +95,8 @@
         Then Verify warning message "fill all fields"
 
        @PlaceAnAd @HEYVANLAR @Negative
-     Scenario: "HEYVANLAR" Place An Ad without Əlaqədar şəxs field
-        And Click on the Kateqoriyanı seçin field
+      Scenario: "HEYVANLAR" Place An Ad without Əlaqədar şəxs field
+        Given Click on the Kateqoriyanı seçin field
         And Click on the Heyvanlar modul
         And Click on the Itler modul
         And Click on the Alabay option
