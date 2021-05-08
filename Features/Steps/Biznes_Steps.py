@@ -69,15 +69,15 @@ def click_mobil(context): context.WebSite.Biznes_Page.click_mobil()
 def click_whatsapp(context): context.WebSite.Biznes_Page.click_whatsapp()
 
 
-@step('Select metro')
+@step('Select metro module')
 def select_metro(context): context.WebSite.Biznes_Page.select_metro()
 
 
-@step('Select Qırmızı xətt')
+@step('Select Qırmızı xətt submodule')
 def select_metro_way(context): context.WebSite.Biznes_Page.select_metro_way()
 
 
-@step('Select Qarayev')
+@step('Select Qarayev submodule')
 def select_metro_Qarayev(context): context.WebSite.Biznes_Page.select_metro_Qarayev()
 
 
