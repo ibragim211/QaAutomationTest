@@ -26,9 +26,9 @@
         And Click Bölgələrə çatdırılma
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
-        And Select metro
-        And Select Qırmızı xətt
-        And Select Qarayev
+        And Select metro module
+        And Select Qırmızı xətt submodule
+        And Select Qarayev submodule
         And Click Mobil
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
@@ -79,9 +79,9 @@
         And Fill Miri in to the user_name field
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
-        And Select metro
-        And Select Qırmızı xətt
-        And Select Qarayev
+        And Select metro module
+        And Select Qırmızı xətt submodule
+        And Select Qarayev submodule
         And Click Mobil
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
@@ -106,9 +106,9 @@
         And Fill Miri in to the user_name field
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
-        And Select metro
-        And Select Qırmızı xətt
-        And Select Qarayev
+        And Select metro module
+        And Select Qırmızı xətt submodule
+        And Select Qarayev submodule
         And Click Mobil
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
@@ -133,9 +133,9 @@
         And Click Barter radio
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
-        And Select metro
-        And Select Qırmızı xətt
-        And Select Qarayev
+        And Select metro module
+        And Select Qırmızı xətt submodule
+        And Select Qarayev submodule
         And Click Mobil
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
@@ -159,9 +159,9 @@
         And Click Barter radio
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
-        And Select metro
-        And Select Qırmızı xətt
-        And Select Qarayev
+        And Select metro module
+        And Select Qırmızı xətt submodule
+        And Select Qarayev submodule
         And Click Mobil
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
