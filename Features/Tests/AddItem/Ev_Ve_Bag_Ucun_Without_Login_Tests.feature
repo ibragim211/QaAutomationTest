@@ -7,10 +7,6 @@
      Background: Steps before authorization
        Given Open Tut az
 #       And Close Pop up message
-       When Click on the Giris button
-       And Fill mirisahib97@gmail.com in to the email field
-       And Fill 0558098899 in to the password field
-       Then Click on the Sayta daxil olmaq button
        And Click on the Elan yerləşdirmək button
 
        @PlaceAnAd @EV_VƏ_BAĞ_ÜÇÜN_Without_Login @Positive
@@ -39,7 +35,7 @@
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
         And Click İstifadəçi razılaşması
         When Click Elanı dərc et button
-        Then Verify element on the next page/pop up message
+        Then Verify element on the next page Login olmadan
 
        @PlaceAnAd @EV_VƏ_BAĞ_ÜÇÜN_Without_Login @Negative
       Scenario: Ev və bağ üçün Without Şəhər Negative

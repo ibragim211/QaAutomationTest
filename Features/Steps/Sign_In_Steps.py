@@ -13,16 +13,16 @@ def close_pop_up(context): context.WebSite.Sign_In_Page.close_pop_up()
 def giris_button_click(context): context.WebSite.Sign_In_Page.giris_button_click()
 
 
-@step('Fill {email_data} in to the email field')
-def input_email(context, email_data): context.WebSite.Sign_In_Page.input_email(email_data)
+@step('Fill mail in to the email field')
+def input_email(context): context.WebSite.Sign_In_Page.input_email()
 
 
 @step("Fill {} in to the email field as an invalid data")
 def inputWrongEmail(context, wrong_email_data): context.WebSite.Sign_In_Page.inputWrongEmail(wrong_email_data)
 
 
-@step('Fill {password_data} in to the password field')
-def input_password(context, password_data): context.WebSite.Sign_In_Page.input_password(password_data)
+@step('Fill password in to the password field')
+def input_password(context): context.WebSite.Sign_In_Page.input_password()
 
 
 @step("Fill {} in to the password field as an invalid data")
