@@ -6,17 +6,16 @@
 
      Background: Steps before authorization
        Given Open Tut az
-#       When Close Pop up message
-       Then Click on the Giris button
-
+#       And Close Pop up message
+       When Click on the Giris button
+       And Fill mirisahib97@gmail.com in to the email field
+       And Fill 0558098899 in to the password field
+       Then Click on the Sayta daxil olmaq button
+       And Click on the Elan yerləşdirmək button
 
         @PlaceAnAd @TANIŞLIQ @Positive
       Scenario: Tanışlıq Positive
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Tanışlıq submodule
         And Select Oğlan qız axtarır submodule
         And Fill Bakı in to the city field
@@ -39,11 +38,7 @@
 
        @PlaceAnAd @TANIŞLIQ @Negative
       Scenario: Tanışlıq Without Şəhər Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Tanışlıq submodule
         And Select Oğlan qız axtarır submodule
         And Fill   in to the city field
@@ -63,11 +58,7 @@
 
          @PlaceAnAd @TANIŞLIQ @Negative
       Scenario: Tanışlıq Without Əlaqədar Şəxs Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Tanışlıq submodule
         And Select Oğlan qız axtarır submodule
         And Fill Bakı in to the city field
@@ -87,14 +78,9 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
-
         @PlaceAnAd @TANIŞLIQ @Negative
       Scenario: Tanışlıq Without Tanışlıq məqsədi Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Tanışlıq submodule
         And Select Oğlan qız axtarır submodule
         And Fill Bakı in to the city field
@@ -113,14 +99,9 @@
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
 
-
         @PlaceAnAd @TANIŞLIQ @Negative
       Scenario: Tanışlıq Without Yaş Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Tanışlıq submodule
         And Select Oğlan qız axtarır submodule
         And Fill Bakı in to the city field

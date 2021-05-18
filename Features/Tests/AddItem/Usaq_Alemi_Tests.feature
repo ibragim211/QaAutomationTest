@@ -6,11 +6,11 @@
 
     Background: Steps before authorization
        Given Open Tut az
-#      And Close Pop up message
-       And Click on the Giris button
-       And Fill testevgeniymanagement@mail.ru in to the email field
-       And Fill 3758268 in to the password field
-       When Click on the Sayta daxil olmaq button
+#       And Close Pop up message
+       When Click on the Giris button
+       And Fill mirisahib97@gmail.com in to the email field
+       And Fill 0558098899 in to the password field
+       Then Click on the Sayta daxil olmaq button
        And Click on the Elan yerləşdirmək button
 
        @PlaceAnAd @UŞAQ_ALƏMİ @Positive

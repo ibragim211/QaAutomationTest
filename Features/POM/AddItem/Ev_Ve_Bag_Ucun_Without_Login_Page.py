@@ -1,5 +1,6 @@
 from Features.Base_Page import Page
 from selenium.webdriver.common.by import By
+from time import sleep
 
 
 class EvVeBagUcunWithoutLoginPage(Page):
@@ -12,10 +13,10 @@ class EvVeBagUcunWithoutLoginPage(Page):
     def click_register_number(self):
         self.click_on_element(*self._clickOnRegisterNumber)
 
-    def FillRegisterNumber(self, register_number: str):
+    def fill_register_number(self, register_number: str):
         self.upload(register_number, *self._clickOnRegisterNumber)
 
-    def FillMail(self, mail: str):
+    def fill_mail(self, mail: str):
         self.input(mail, *self._fillMail)
 
     def click_rules_user(self):

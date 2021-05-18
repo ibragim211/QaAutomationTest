@@ -6,16 +6,16 @@
 
     Background: Steps before authorization
        Given Open Tut az
-#       When Close Pop up message
-       Then Click on the Giris button
+#       And Close Pop up message
+       When Click on the Giris button
+       And Fill mirisahib97@gmail.com in to the email field
+       And Fill 0558098899 in to the password field
+       Then Click on the Sayta daxil olmaq button
+       And Click on the Elan yerləşdirmək button
 
        @PlaceAnAd @VAKANSİYALAR @Positive
      Scenario: Vakansiyalar Positive
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
         And Fill Bakı in to the city field
@@ -51,11 +51,7 @@
 
        @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without Şəhər Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
         And Fill     in to the city field
@@ -88,11 +84,7 @@
 
        @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without Başlıq Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
         And Fill Bakı in to the city field
@@ -127,16 +119,12 @@
 
        @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without Əlaqədar Şəxs Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
         And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
-         And Click Təhsil
+        And Click Təhsil
         And Select Ali
         And Click İş təcrübəsi
         And Select Təcrübəsiz
@@ -166,11 +154,7 @@
 
        @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without Təhsil Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
         And Fill Bakı in to the city field
@@ -205,11 +189,7 @@
 
        @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without İş təcrübəsi Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
         And Fill Bakı in to the city field
@@ -243,16 +223,12 @@
 
        @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without Yaş Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
         And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
-         And Click Təhsil
+        And Click Təhsil
         And Select Ali
         And Click İş təcrübəsi
         And Select Təcrübəsiz
@@ -281,11 +257,7 @@
 
        @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without Fəaliyyət sahəsi Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
         And Fill Bakı in to the city field
@@ -317,10 +289,7 @@
 
        @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without İşin növü NegativeGiven Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
         And Fill Bakı in to the city field
@@ -354,11 +323,7 @@
 
        @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without İş qrafiki Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
         And Fill Bakı in to the city field
@@ -392,16 +357,12 @@
 
        @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without Əmək haqqı Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
         And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
-         And Click Təhsil
+        And Click Təhsil
         And Select Ali
         And Click İş təcrübəsi
         And Select Təcrübəsiz

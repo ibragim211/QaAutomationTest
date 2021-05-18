@@ -3,15 +3,15 @@
 
     Background: Steps before authorization
        Given Open Tut az
-#       When Close Pop up message
-       Then Click on the Giris button
+#       And Close Pop up message
+       When Click on the Giris button
+       And Fill mirisahib97@gmail.com in to the email field
+       And Fill 0558098899 in to the password field
+       Then Click on the Sayta daxil olmaq button
 
        @Service @Positive
      Scenario: Add service to Item with Balans
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        And Click User icon
+        Given Click User icon
         And Click Şəxsi elanlar
         And Click Reklam etmək
         And Click VIP
@@ -21,10 +21,7 @@
 
        @Service @Positive
      Scenario: Add service to Item with Bank Card
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        And Click User icon
+        Given Click User icon
         And Click Şəxsi elanlar
         And Click Reklam etmək
         And Click VIP
@@ -36,15 +33,12 @@
         And Fill 25 in to the Il field
         And Fill 123 in to the CVV field
         And Click Ödəniş
-        And Click TUT.az saytına qayıt
+        When Click TUT.az saytına qayıt
         Then Verify Service visible
 
        @Service @Positive
      Scenario: Add service to Item with Terminal
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        And Click User icon
+        Given Click User icon
         And Click Şəxsi elanlar
         And Click Reklam etmək
         And Click VIP

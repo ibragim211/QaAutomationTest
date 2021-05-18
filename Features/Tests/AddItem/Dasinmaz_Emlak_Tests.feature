@@ -7,10 +7,10 @@
      Background: Steps before authorization
        Given Open Tut az
 #       And Close Pop up message
-       And Click on the Giris button
-       And Fill testevgeniymanagement@mail.ru in to the email field
-       And Fill 3758268 in to the password field
-       When Click on the Sayta daxil olmaq button
+       When Click on the Giris button
+       And Fill mirisahib97@gmail.com in to the email field
+       And Fill 0558098899 in to the password field
+       Then Click on the Sayta daxil olmaq button
        And Click on the Elan yerləşdirmək button
 
        @PlaceAnAd @DAŞINMAZ_ƏMLAK @Positive
@@ -543,7 +543,6 @@
         And Click on the Kondisioner check box
         And Click on the senedin novu field
         And Click on the muqavile option
-        And Click on the Barter check box
 #        And Fill 1000 in to the azn field
         And Click on the Endirim mümkündür check box
         And Click on the Ipoteka check box

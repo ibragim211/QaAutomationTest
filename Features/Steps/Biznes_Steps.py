@@ -1,7 +1,7 @@
 from behave import *
 
 
-@given('Click on the Elan yerləşdirmək button')
+@Given('Click on the Elan yerləşdirmək button')
 def elan_yerleshdrimek(context): context.WebSite.Biznes_Page.elan_yerleshdrimek()
 
 

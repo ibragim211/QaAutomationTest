@@ -62,7 +62,7 @@ class DasinmazEmlakPage(Page):
     _warningPopUpMessage = By.XPATH, '//*[text()="Forma doldurularkən bu səhvlər baş verdi:"]'
 
     def elan_yerlesdirmek_click(self):
-        sleep(2)
+        sleep(3)
         self.click_on_element(*self._clickElanYerlesdirmek)
 
     def category_field_click(self):
