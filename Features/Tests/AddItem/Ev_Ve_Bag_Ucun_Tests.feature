@@ -6,16 +6,16 @@
 
      Background: Steps before authorization
        Given Open Tut az
-#       When Close Pop up message
-       Then Click on the Giris button
+#       And Close Pop up message
+       When Click on the Giris button
+       And Fill mirisahib97@gmail.com in to the email field
+       And Fill 0558098899 in to the password field
+       Then Click on the Sayta daxil olmaq button
+       And Click on the Elan yerləşdirmək button
 
        @PlaceAnAd @EV_VƏ_BAĞ_ÜÇÜN @Positive
      Scenario: Ev və bağ üçün Positive
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Ev və bağ üçün submodule
         And Select Ərzaq submodule
         And Fill Bakı in to the city field
@@ -36,14 +36,9 @@
         When Click Elanı dərc et button
         Then Verify element on the next page/pop up message
 
-
       @PlaceAnAd @EV_VƏ_BAĞ_ÜÇÜN @Negative
      Scenario: Ev və bağ üçün Without Şəhər Negative
-       Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Ev və bağ üçün submodule
         And Select Ərzaq submodule
         And Fill   in to the city field
@@ -62,11 +57,7 @@
 
        @PlaceAnAd @EV_VƏ_BAĞ_ÜÇÜN @Negative
      Scenario: Ev və bağ üçün Without Başlıq Negative
-      Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Ev və bağ üçün submodule
         And Select Ərzaq submodule
         And Fill Bakı in to the city field
@@ -87,11 +78,7 @@
 
        @PlaceAnAd @EV_VƏ_BAĞ_ÜÇÜN @Negative
      Scenario: Ev və bağ üçün Without Qiymət Negative
-       Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Ev və bağ üçün submodule
         And Select Ərzaq submodule
         And Fill Bakı in to the city field
@@ -112,11 +99,7 @@
 
         @PlaceAnAd @EV_VƏ_BAĞ_ÜÇÜN @Negative
       Scenario: Ev və bağ üçün Without Əlaqədar Şəxs Negative
-       Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Ev və bağ üçün submodule
         And Select Ərzaq submodule
         And Fill Bakı in to the city field

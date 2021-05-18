@@ -6,16 +6,16 @@
 
      Background: Steps before authorization
        Given Open Tut az
-#       When Close Pop up message
-       Then Click on the Giris button
+#       And Close Pop up message
+       When Click on the Giris button
+       And Fill mirisahib97@gmail.com in to the email field
+       And Fill 0558098899 in to the password field
+       Then Click on the Sayta daxil olmaq button
+       And Click on the Elan yerləşdirmək button
 
         @PlaceAnAd @HOBBİ_VƏ_İDMAN @Positive
       Scenario: Hobbi İdman Positive
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Hobbi İdman və Asudə vaxt submodule
         And Select Kolleksiya submodule
         And Select Pullar submodule
@@ -39,11 +39,7 @@
 
          @PlaceAnAd @HOBBİ_VƏ_İDMAN @Negative
        Scenario: Hobbi İdman Without Şəhər Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Hobbi İdman və Asudə vaxt submodule
         And Select Kolleksiya submodule
         And Select Pullar submodule
@@ -63,11 +59,7 @@
 
          @PlaceAnAd @HOBBİ_VƏ_İDMAN @Negative
        Scenario: Hobbi İdman Without Başlıq Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Hobbi İdman və Asudə vaxt submodule
         And Select Kolleksiya submodule
         And Select Pullar submodule
@@ -89,11 +81,7 @@
 
         @PlaceAnAd @HOBBİ_VƏ_İDMAN @Negative
       Scenario: Hobbi İdman Without Qiymət Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Hobbi İdman və Asudə vaxt submodule
         And Select Kolleksiya submodule
         And Select Pullar submodule
@@ -115,11 +103,7 @@
 
          @PlaceAnAd @HOBBİ_VƏ_İDMAN @Negative
        Scenario: Hobbi İdman Without Əlaqədar Şəxs Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Hobbi İdman və Asudə vaxt submodule
         And Select Kolleksiya submodule
         And Select Pullar submodule

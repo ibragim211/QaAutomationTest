@@ -4,36 +4,36 @@
 	As a user of Tut.az
 	I want to open my account
 
-     Background: Steps before authorization
+    Background: Steps before authorization
        Given Open Tut az
 #       And Close Pop up message
        And Click on the Giris button
 
-      @Authorization @Positive
+       @Authorization @Positive
      Scenario: Sing in using valid data
-        Given Fill testevgeniymanagement@mail.ru in to the email field
-        And Fill 3758268 in to the password field
+        Given Fill mirisahib97@gmail.com in to the email field
+        And Fill 0558098899 in to the password field
         When Click on the Sayta daxil olmaq button
         Then Verify element on next page
 
-      @Authorization @Negative
+       @Authorization @Negative
      Scenario: Sing in without email
-        Given Fill 3758268 in to the password field
+        Given Fill 0558098899 in to the password field
         When Click on the Sayta daxil olmaq button
         Then Verify warning Pop Up message
 
-      @Authorization @Negative
+       @Authorization @Negative
      Scenario: Sing in without password
-        Given Fill testevgeniymanagement@mail.ru in to the email field
+        Given Fill mirisahib97@gmail.com in to the email field
         When Click on the Sayta daxil olmaq button
         Then Verify warning Pop Up message
 
-      @Authorization @Negative
+       @Authorization @Negative
      Scenario: Sing in without email and password
         When Click on the Sayta daxil olmaq button
         Then Verify warning Pop Up message
 
-      @Authorization @Negative
+       @Authorization @Negative
      Scenario Outline: Sing in using invalid email data
         Given Fill <data> in to the email field as an invalid data
                           Examples:
@@ -47,9 +47,9 @@
         When Click on the Sayta daxil olmaq button
         Then Verify warning Pop Up message for invalid data
 
-      @Authorization @Negative
+       @Authorization @Negative
      Scenario Outline: Sing in using invalid password data
-          Given Fill testevgeniymanagement@mail.ru in to the email field
+        Given Fill testevgeniymanagement@mail.ru in to the email field
         And Fill <data> in to the password field as an invalid data
                           Examples:
                           | data      |

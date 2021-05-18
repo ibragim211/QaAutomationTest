@@ -4,18 +4,18 @@
 	As a user of Tut.az
 	I want to place an ad
 
-    Background: Steps before authorization
+     Background: Steps before authorization
        Given Open Tut az
-#       When Close Pop up message
-       Then Click on the Giris button
+#       And Close Pop up message
+       When Click on the Giris button
+       And Fill mirisahib97@gmail.com in to the email field
+       And Fill 0558098899 in to the password field
+       Then Click on the Sayta daxil olmaq button
+       And Click on the Elan yerləşdirmək button
 
        @BIZNES @Positive
      Scenario: Biznes Positive
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Biznes submodule
         And Select Hazır biznes submodule
         And Fill Bakı in to the city field
@@ -37,11 +37,7 @@
 
        @BIZNES @Negative
      Scenario: Biznes Without Kateqoriya Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Fill Bakı in to the city field
+        Given Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
         And Fill Miri in to the user_name field
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
@@ -59,11 +55,7 @@
 
        @BIZNES @Negative
      Scenario: Biznes Without Şəhər Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Biznes submodule
         And Select Hazır biznes submodule
         And Fill   in to the city field
@@ -82,11 +74,7 @@
 
        @BIZNES @Negative
      Scenario: Biznes Without Başlıq Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Biznes submodule
         And Select Hazır biznes submodule
         And Fill Bakı in to the city field
@@ -107,11 +95,7 @@
 
        @BIZNES @Negative
      Scenario: Biznes Without Qiymət Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Biznes submodule
         And Select Hazır biznes submodule
         And Fill Bakı in to the city field
@@ -132,11 +116,7 @@
 
        @BIZNES @Negative
      Scenario: Biznes Without Əlaqədar Şəxs Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Biznes submodule
         And Select Hazır biznes submodule
         And Fill Bakı in to the city field
@@ -157,11 +137,7 @@
 
        @BIZNES @Negative
      Scenario: Biznes Wrong Prefix Mobil Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Biznes submodule
         And Select Hazır biznes submodule
         And Fill Bakı in to the city field
@@ -184,11 +160,7 @@
 
        @BIZNES @Negative
      Scenario: Biznes Wrong Prefix Whatsapp Negative
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        Given Click on the Elan yerləşdirmək button
-        And Select service module
+        Given Select service module
         And Select Biznes submodule
         And Select Hazır biznes submodule
         And Fill Bakı in to the city field

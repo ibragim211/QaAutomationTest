@@ -13,7 +13,7 @@ def close_pop_up(context): context.WebSite.Sign_In_Page.close_pop_up()
 def giris_button_click(context): context.WebSite.Sign_In_Page.giris_button_click()
 
 
-@Given('Fill {email_data} in to the email field')
+@step('Fill {email_data} in to the email field')
 def input_email(context, email_data): context.WebSite.Sign_In_Page.input_email(email_data)
 
 

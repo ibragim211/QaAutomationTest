@@ -6,11 +6,11 @@ def click_register_number(context): context.WebSite.Ev_Ve_Bag_Ucun_Without_Login
 
 
 @step('Fill {register_number} in to the Qeydiyyat nömrəsi field')
-def FillRegisterNumber(context, register_number): context.WebSite.Ev_Ve_Bag_Ucun_Without_Login_Page.FillRegisterNumber(register_number)
+def fill_register_number(context, register_number): context.WebSite.Ev_Ve_Bag_Ucun_Without_Login_Page.fill_register_number(register_number)
 
 
 @step('Fill {mail} in to the E-mail ünvan field')
-def FillMail(context, mail): context.WebSite.Ev_Ve_Bag_Ucun_Without_Login_Page.FillMail(mail)
+def fill_mail(context, mail): context.WebSite.Ev_Ve_Bag_Ucun_Without_Login_Page.fill_mail(mail)
 
 
 @step('Click İstifadəçi razılaşması')

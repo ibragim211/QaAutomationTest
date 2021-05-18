@@ -6,8 +6,12 @@
 
      Background: Steps before authorization
        Given Open Tut az
-#       When Close Pop up message
-#       Then Click on the Giris button
+#       And Close Pop up message
+       When Click on the Giris button
+       And Fill mirisahib97@gmail.com in to the email field
+       And Fill 0558098899 in to the password field
+       Then Click on the Sayta daxil olmaq button
+       And Click on the Elan yerləşdirmək button
 
        @PlaceAnAd @EV_VƏ_BAĞ_ÜÇÜN_Without_Login @Positive
       Scenario: Ev və bağ üçün Positive
