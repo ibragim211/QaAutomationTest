@@ -28,9 +28,9 @@ class BiznesPage(Page):
     _popUpErrPrefix = By.XPATH, '//*[text()="Prefiksi düzgün qeyd edin"]'
     _popUpErrMobil = By.XPATH, '//*[text()="Kontakt nömrəsi üçün prefiksi düzgün qeyd edin"]'
     _popUpErrWhatsapp = By.XPATH, '//*[text()="Whatsapp üçün prefiksi düzgün qeyd edin"]'
+    _signInSuccess = By.XPATH, '//div[@class="products-block_title"]'
 
     def elan_yerleshdrimek(self):
-        sleep(2)
         self.click_on_element(*self._clickOnElanYerleshdirmek)
 
     def select_category_cr_item(self):
@@ -91,12 +91,9 @@ class BiznesPage(Page):
 
     def click_submit(self):
         self.click_on_element(*self._clickOnSubmit)
-        sleep(5)
 
-    def element_visible(self):
-        sleep(5)
-        status = self.find_element(*self._popUpMessageItem).is_displayed()
-        assert status is True
+    def sign_in_success(self):
+        self.find_element(*self._signInSuccess).is_displayed()
 
     def pop_up_visible_kateqoriya(self):
         status = self.find_element(*self._popUpErrKateqoriya).is_displayed()

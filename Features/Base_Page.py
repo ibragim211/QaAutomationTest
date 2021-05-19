@@ -1,42 +1,44 @@
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
-
 
 class Page:
 
     def __init__(self, driver):
         self.driver = driver
+        self.mail = "mirisahib97@gmail.com"
+        self.password = "0558098899"
+        self.link = "https://staging.tut.az"
 
     def find_element(self, *locator):
-        return self.driver.find_element(by=locator[0],
-                                        value=locator[1])
+        by = locator[0]
+        value = locator[1]
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((by, value)))
 
-    # def find_element_and_click(self, locator, timeout):
-    #    try:
-    #       wait = WebDriverWait(self.driver, timeout)
-    #       wait.until(expected_conditions.element_to_be_clickable(by=locator[0],
-    #                                                               value=locator[1])).click()
-    #   except TimeoutException:
-    #       return False
-    #  return True
+        return self.driver.find_element(by, value)
 
     def click_on_element(self, *locator):
-        element = self.driver.find_element(by=locator[0],
-                                           value=locator[1])
+        by = locator[0]
+        value = locator[1]
+
+        element = self.driver.find_element(by, value)
         element.click()
 
     def input(self, text, *locator):
-        element = self.driver.find_element(by=locator[0],
-                                           value=locator[1])
+        by = locator[0]
+        value = locator[1]
+
+        element = self.driver.find_element(by, value)
         element.clear()
         element.send_keys(text)
 
     def upload(self, text, *locator):
-        element = self.driver.find_element(by=locator[0],
-                                           value=locator[1])
+        by = locator[0]
+        value = locator[1]
+
+        element = self.driver.find_element(by, value)
         element.send_keys(text)
 
     def move_to_element(self, *locator):

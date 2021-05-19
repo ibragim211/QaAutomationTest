@@ -7,10 +7,11 @@
      Background: Steps before authorization
        Given Open Tut az
 #       And Close Pop up message
-       And Click on the Giris button
-       And Fill testevgeniymanagement@mail.ru in to the email field
-       And Fill 3758268 in to the password field
-       When Click on the Sayta daxil olmaq button
+       When Click on the Giris button
+       And Fill mail in to the email field
+       And Fill password in to the password field
+       Then Click on the Sayta daxil olmaq button
+       Then Sign In Success
        And Click on the Elan yerləşdirmək button
 
        @PlaceAnAd @HEYVANLAR @Positive
@@ -77,7 +78,6 @@
         And Click on the Baku option
         And Click on the Bölgələrə çatdırılma check box
         And Fill TestTestTest in to the Başlıq field
-        And Click on the Barter check box
 #        And Fill 1000 in to the azn field
         And Click on the Endirim mümkündür check box
         And Fill TestTestTest123654789 in to the Tesvir field

@@ -7,10 +7,11 @@
      Background: Steps before authorization
        Given Open Tut az
 #       And Close Pop up message
-       And Click on the Giris button
-       And Fill testevgeniymanagement@mail.ru in to the email field
-       And Fill 3758268 in to the password field
-       When Click on the Sayta daxil olmaq button
+       When Click on the Giris button
+       And Fill mail in to the email field
+       And Fill password in to the password field
+       Then Click on the Sayta daxil olmaq button
+       Then Sign In Success
        And Click on the Elan yerləşdirmək button
 
        @PlaceAnAd @DAŞINMAZ_ƏMLAK @Positive
@@ -233,7 +234,7 @@
         Then Verify warning message "fill all fields"
 
        @PlaceAnAd @DAŞINMAZ_ƏMLAK @Negative
-     Scenario: "DAŞINMAZ_ƏMLAK" Place An Ad without Elan Yerlesen field
+     Scenario: "DAŞINMAZ_ƏMLAK" Place An Ad without Elan Yerlesdiren field
         Given Click on the Kateqoriyanı seçin field
         And Click on the Daşınmaz əmlak modul
         And Click on the Mənzillər modul
@@ -543,7 +544,6 @@
         And Click on the Kondisioner check box
         And Click on the senedin novu field
         And Click on the muqavile option
-        And Click on the Barter check box
 #        And Fill 1000 in to the azn field
         And Click on the Endirim mümkündür check box
         And Click on the Ipoteka check box

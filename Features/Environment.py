@@ -2,7 +2,7 @@ from selenium import webdriver
 from WebSite.Web import WebSite
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
-from selenium.webdriver.chrome.options import Options
+import Base_Page
 import time
 
 
@@ -43,10 +43,6 @@ def before_step(context, step):
 def after_step(context, step):
     if step.status == 'failed':
         print('\nStep failed: ', step)
-
-
-def after_feature(context, feature):
-    context.driver.get_screenshot_as_file("C:/pythonProject/Features/Screen_shots/fail.png")
 
 
 def after_scenario(context, feature):

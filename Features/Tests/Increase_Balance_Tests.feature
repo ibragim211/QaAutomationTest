@@ -3,15 +3,15 @@
 
     Background: Steps before authorization
        Given Open Tut az
-#       When Close Pop up message
-       Then Click on the Giris button
+#       And Close Pop up message
+       When Click on the Giris button
+       And Fill mail in to the email field
+       And Fill password in to the password field
+       Then Click on the Sayta daxil olmaq button
 
        @Increase_Balance @Positive
      Scenario: Increase balance with Bank Card
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
-        And Click on the Sayta daxil olmaq button
-        And Click User icon
+        Given Click User icon
         And Click hesab
         And Click Hesabın artırılması
         And Fill 100 in to the Məbləğ field
@@ -27,8 +27,6 @@
 
        @Increase_Balance @Positive
      Scenario: Increase balance with Terminal
-        Given Fill mirisahib97@gmail.com in to the email field
-        And Fill 0558098899 in to the password field
         And Click on the Sayta daxil olmaq button
         And Click User icon
         And Click hesab

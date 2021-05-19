@@ -6,8 +6,8 @@
 
      Background: Steps before authorization
        Given Open Tut az
-#       When Close Pop up message
-#       Then Click on the Giris button
+#       And Close Pop up message
+       And Click on the Elan yerləşdirmək button
 
        @PlaceAnAd @EV_VƏ_BAĞ_ÜÇÜN_Without_Login @Positive
       Scenario: Ev və bağ üçün Positive
@@ -35,7 +35,7 @@
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
         And Click İstifadəçi razılaşması
         When Click Elanı dərc et button
-        Then Verify element on the next page/pop up message
+        Then Verify element on the next page Login olmadan
 
        @PlaceAnAd @EV_VƏ_BAĞ_ÜÇÜN_Without_Login @Negative
       Scenario: Ev və bağ üçün Without Şəhər Negative
