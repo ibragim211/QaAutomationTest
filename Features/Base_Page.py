@@ -13,22 +13,15 @@ class Page:
         self.link = "https://staging.tut.az"
 
     def find_element(self, *locator):
-        return self.driver.find_element(by=locator[0],
-                                        value=locator[1])
+        by = locator[0]
+        value = locator[1]
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((by, value)))
 
-    # def find_element_and_click(self, locator, timeout):
-    #    try:
-    #       wait = WebDriverWait(self.driver, timeout)
-    #       wait.until(expected_conditions.element_to_be_clickable(by=locator[0],
-    #                                                               value=locator[1])).click()
-    #   except TimeoutException:
-    #       return False
-    #  return True
+        return self.driver.find_element(by, value)
 
     def click_on_element(self, *locator):
         by = locator[0]
         value = locator[1]
-        WebDriverWait(self.driver, 10000).until(EC.element_to_be_clickable((by, value)))
 
         element = self.driver.find_element(by, value)
         element.click()
@@ -36,7 +29,6 @@ class Page:
     def input(self, text, *locator):
         by = locator[0]
         value = locator[1]
-        WebDriverWait(self.driver, 10000).until(EC.presence_of_element_located((by, value)))
 
         element = self.driver.find_element(by, value)
         element.clear()
@@ -45,7 +37,6 @@ class Page:
     def upload(self, text, *locator):
         by = locator[0]
         value = locator[1]
-        WebDriverWait(self.driver, 10000).until(EC.presence_of_element_located((by, value)))
 
         element = self.driver.find_element(by, value)
         element.send_keys(text)
@@ -55,8 +46,3 @@ class Page:
                                            value=locator[1])
         element.actions = ActionChains(self.driver)
         element.actions.move_to_element(element).perform()
-
-    def wait(self, *locator):
-        by = locator[0]
-        value = locator[1]
-        WebDriverWait(self.driver, 20).until(EC.element_to_be_clickable((by, value)))
