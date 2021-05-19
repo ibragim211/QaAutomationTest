@@ -3,6 +3,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
+from datetime import datetime
 
 class Page:
 
@@ -13,11 +14,19 @@ class Page:
         self.link = "https://staging.tut.az"
 
     def find_element(self, *locator):
-        by = locator[0]
-        value = locator[1]
-        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((by, value)))
 
-        return self.driver.find_element(by, value)
+        try:
+            by = locator[0]
+            value = locator[1]
+            WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((by, value)))
+
+            return self.driver.find_element(by, value)
+
+        except Exception as e:
+            now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+            self.driver.save_screenshot("C:/QaAutomationTest/Features/Photos/Error/screenshot-%s.png" % now)
+
+
 
     def click_on_element(self, *locator):
         by = locator[0]

@@ -10,6 +10,7 @@
        When Click on the Giris button
        And Fill mail in to the email field
        And Fill password in to the password field
+       Then Click on the Sayta daxil olmaq button
        Then Sign In Success
        And Click on the Elan yerləşdirmək button
 
