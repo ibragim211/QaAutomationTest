@@ -5,8 +5,8 @@
        Given Open Tut az
 #       And Close Pop up message
        When Click on the Giris button
-       And Fill mirisahib97@gmail.com in to the email field
-       And Fill 0558098899 in to the password field
+       And Fill mail in to the email field
+       And Fill password in to the password field
        Then Click on the Sayta daxil olmaq button
 
        @Increase_Balance @Positive

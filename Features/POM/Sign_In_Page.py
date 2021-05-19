@@ -11,7 +11,7 @@ class LoginPage(Page):
     _fillEmailField = By.ID, 'j-u-login-email'
     _fillPasswordField = By.ID, 'j-u-login-pass'
     _clickOnDaxilOlButton = By.XPATH, '//button[@class="btn btn-success j-submit"]'
-    _logoVerify = By.XPATH, '//div[@class="products-block_title"]'
+    _signInVerify = By.XPATH, '//div[@class="products-block_title"]'
     _popUpMessage = By.XPATH, '//*[text()="Forma doldurularkən bu səhvlər baş verdi:"]'
     _warningForInvalidData = By.XPATH, '//*[text()="E-mail və ya şifrə səhv qeyd olunub"]'
 
@@ -40,7 +40,7 @@ class LoginPage(Page):
         self.click_on_element(*self._clickOnDaxilOlButton)
 
     def logo_verify(self):
-        status = self.find_element(*self._logoVerify).is_displayed()
+        status = self.find_element(*self._signInVerify).is_displayed()
         assert status is True
 
     def pop_up_visible(self):

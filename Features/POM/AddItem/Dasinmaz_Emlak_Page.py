@@ -27,7 +27,7 @@ class DasinmazEmlakPage(Page):
     _clickElanYerlesenOption = By.XPATH, '//*[text()="Sahibkar"]'
     _fillMertebeNumber = By.NAME, 'd[1305][604]'
     _clickOtaqlarinSayiField = By.NAME, 'd[1305][601]'
-    _clickOtaqlarinSayiOption = By.XPATH, '//option[@value="7"]'
+    _clickOtaqlarinSayiOption = By.XPATH, '//option[text()="7"]'
     _fillSaheData = By.NAME, 'd[1305][603]'
     _clickTemirField = By.NAME, 'd[1305][768]'
     _clickTemirOption = By.XPATH, '//*[text()="Təmirli"]'
@@ -62,11 +62,9 @@ class DasinmazEmlakPage(Page):
     _warningPopUpMessage = By.XPATH, '//*[text()="Forma doldurularkən bu səhvlər baş verdi:"]'
 
     def elan_yerlesdirmek_click(self):
-        sleep(3)
         self.click_on_element(*self._clickElanYerlesdirmek)
 
     def category_field_click(self):
-        sleep(1)
         self.click_on_element(*self._clickCategoryField)
 
     def category_option(self):
@@ -76,7 +74,6 @@ class DasinmazEmlakPage(Page):
         self.click_on_element(*self._clickOptionMenziller)
 
     def city_field(self):
-        sleep(1)
         self.click_on_element(*self._clickCityField)
 
     def city_baku(self):
@@ -211,10 +208,8 @@ class DasinmazEmlakPage(Page):
 
     def click_elan_derc(self):
         self.click_on_element(*self._clickElaniDercEtmek)
-        sleep(1)
 
     def element_visible(self):
-        sleep(1)
         status = self.find_element(*self._verifyElementOnNextPageOrPopUpMessage).is_displayed()
         assert status is True
 

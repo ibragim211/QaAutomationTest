@@ -107,3 +107,6 @@ def pop_up_visible_mobil_prefix(context): context.WebSite.Biznes_Page.pop_up_vis
 
 @Then('Verify warning Pop Up message Whatsapp Prefix')
 def pop_up_visible_whatsapp_prefix(context): context.WebSite.Biznes_Page.pop_up_visible_whatsapp_prefix()
+
+@Then('Sign In Success')
+def sign_in_success(context): context.WebSite.Biznes_Page.sign_in_success()

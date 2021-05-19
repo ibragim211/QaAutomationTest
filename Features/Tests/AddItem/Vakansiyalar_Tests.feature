@@ -8,9 +8,10 @@
        Given Open Tut az
 #       And Close Pop up message
        When Click on the Giris button
-       And Fill mirisahib97@gmail.com in to the email field
-       And Fill 0558098899 in to the password field
+       And Fill mail in to the email field
+       And Fill password in to the password field
        Then Click on the Sayta daxil olmaq button
+       Then Sign In Success
        And Click on the Elan yerləşdirmək button
 
        @PlaceAnAd @VAKANSİYALAR @Positive
@@ -45,7 +46,7 @@
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
         And Fill Miri in to the user_name field
-        And Fill C:\pythonProject\Features\Photos\Test.jpg in to the img field
+        And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
         When Click Elanı dərc et button
         Then Verify element on the next page/pop up message
 
@@ -288,7 +289,7 @@
         Then Verify warning Pop Up message Bütün xana
 
        @PlaceAnAd @VAKANSİYALAR @Negative
-     Scenario: Biznes Without İşin növü NegativeGiven Fill mirisahib97@gmail.com in to the email field
+     Scenario: Biznes Without İşin növü Negative
         Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
