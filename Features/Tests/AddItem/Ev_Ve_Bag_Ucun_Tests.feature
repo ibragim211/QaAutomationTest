@@ -21,7 +21,6 @@
         And Select Ərzaq submodule
         And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
-        And Click Barter radio
         And Click Bölgələrə çatdırılma
         And Fill Miri in to the user_name field
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
@@ -33,6 +32,7 @@
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
+        And Click Barter radio
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
         When Click Elanı dərc et button
         Then Verify element on the next page/pop up message
@@ -44,7 +44,6 @@
         And Select Ərzaq submodule
         And Fill   in to the city field
         And Fill Elan Test in to the topic field
-        And Click Barter radio
         And Fill Miri in to the user_name field
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
@@ -52,6 +51,7 @@
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
+        And Click Barter radio
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Şəhər
@@ -62,7 +62,6 @@
         And Select Ev və bağ üçün submodule
         And Select Ərzaq submodule
         And Fill Bakı in to the city field
-        And Click Barter radio
         And Fill Miri in to the user_name field
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
@@ -73,6 +72,7 @@
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
+        And Click Barter radio
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana
@@ -105,7 +105,6 @@
         And Select Ərzaq submodule
         And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
-        And Click Barter radio
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
         And Select metro module
@@ -115,6 +114,7 @@
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
         And Fill (55) 809 88 99 in to the Whatsapp field
+        And Click Barter radio
         And Fill C:\QaAutomationTest\Features\Photos\Test.jpg in to the img field
         When Click Elanı dərc et button
         Then Verify warning Pop Up message Bütün xana

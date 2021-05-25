@@ -1,5 +1,5 @@
  @Increase_Balance
-    Feature: Add service
+    Feature: Increase Balance
 
     Background: Steps before authorization
        Given Open Tut az

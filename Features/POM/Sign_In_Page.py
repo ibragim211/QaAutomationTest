@@ -44,9 +44,9 @@ class LoginPage(Page):
         assert status is True
 
     def pop_up_visible(self):
-        status = self.find_element(*self._popUpMessage).is_displayed()
+        status = self.find_element_visible(*self._popUpMessage).is_displayed()
         assert status is True
 
     def warning_for_invalid_data(self):
-        status = self.find_element(*self._warningForInvalidData).is_displayed()
+        status = self.find_element_visible(*self._warningForInvalidData).is_displayed()
         assert status is True
