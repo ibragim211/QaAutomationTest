@@ -6,12 +6,12 @@ from time import sleep
 class ServicePage(Page):
 
     _clickOnUserIcon = By.XPATH, '//i[@class="fa fa-caret-down"]'
-    _clickOnShexsiElanlar = By.XPATH, '//*[text()=" şəxsi elanlar"]'
+    _clickOnShexsiElanlar = By.XPATH, '//*[text()=" elanlar"]'
     _clickOnReklamEtmek = By.XPATH, '//*[text()="Reklam etmək"]'
-    _clickOnVIP = By.XPATH, '//*[text()=" VIP "]'
+    _clickOnVIP = By.XPATH, '//input[@value="8"]'
     _clickOnUserRulesService = By.NAME, 'agreeTerms'
     _clickOnDavamEtmek = By.XPATH, '//input[@value="Davam etmək"]'
-    _verify_service = By.XPATH, '//*[text()=" elanı üçün xidməti uğurla aktiv etdiniz\n"]'
+    _verify_service = By.XPATH, '//*[text()=" elanı üçün VIP xidmətini uğurla aktiv etdiniz\n"]'
     _clickOnBankCard = By.XPATH, '//*[@data-key="965f5596"]'
     _fillPan = By.NAME, 'pan'
     _fillAy = By.NAME, 'month'
@@ -19,7 +19,7 @@ class ServicePage(Page):
     _fillCVV = By.NAME, 'csc'
     _clickOnOdenis = By.XPATH, '//*[text()="Ödəniş"]'
     _clickOnQayit = By.XPATH, '//*[text()="TUT.az saytına qayıt"]'
-    _clickOnTerminal = By.XPATH, '//*[@data-key="26557a81"]'
+    _clickOnTerminal = By.XPATH, '//*[@data-key="93ad2731"]'
     verify_Terminal = By.XPATH, '//*[text()="\nÖdəniş haqqında məlumat "]'
 
     def click_user_icon(self):

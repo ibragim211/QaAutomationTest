@@ -4,11 +4,11 @@ from time import sleep
 
 
 class EvVeBagUcunWithoutLoginPage(Page):
-    _clickOnRegisterNumber = By.NAME, 'phone'
-    _fillMail = By.ID, 'email'
-    _clickOnRulesUser = By.NAME, 'agree'
-    _popUpNL = By.XPATH, '//*[text()="\nElanınız yadda saxlanıldı, lakin hələ dərc olunmayıb. "]'
-    _popUpNLErrPhone = By.XPATH, '//*[text()="Telefon nömrəsi düzgün qeyd olunmayıb"]'
+    _clickOnRegisterNumber = By.NAME, 'phone', 'clickOnRegisterNumber'
+    _fillMail = By.ID, 'email', 'fillMail'
+    _clickOnRulesUser = By.NAME, 'agree', 'clickOnRulesUser'
+    _popUpNL = By.XPATH, '//*[text()="\nElanınız yadda saxlanıldı, lakin hələ dərc olunmayıb. "]', 'popUpNL'
+    _popUpNLErrPhone = By.XPATH, '//*[text()="Telefon nömrəsi düzgün qeyd olunmayıb"]', 'popUpNLErrPhone'
 
     def click_register_number(self):
         self.click_on_element(*self._clickOnRegisterNumber)
@@ -23,6 +23,7 @@ class EvVeBagUcunWithoutLoginPage(Page):
         self.click_on_element(*self._clickOnRulesUser)
 
     def pop_up_visible_NL(self):
+        # sleep(12000)
         status = self.find_element(*self._popUpNL).is_displayed()
         assert status is True
 

@@ -1,10 +1,6 @@
 from behave import *
 
 
-@Given('Click on the Elan yerləşdirmək button')
-def elan_yerleshdrimek(context): context.WebSite.Biznes_Page.elan_yerleshdrimek()
-
-
 @step('Click on the Sayta daxil olmaq button')
 def daxil_ol_click(context): context.WebSite.Sign_In_Page.daxil_ol_click()
 

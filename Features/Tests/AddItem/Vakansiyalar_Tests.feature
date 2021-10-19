@@ -16,11 +16,14 @@
 
        @PlaceAnAd @VAKANSİYALAR @Positive
      Scenario: Vakansiyalar Positive
+        And Fill Bakı in to the city field
         Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
-        And Fill Bakı in to the city field
         And Fill Elan Test in to the topic field
+        And Select metro module
+        And Select Qırmızı xətt submodule
+        And Select Qarayev submodule
         And Click Təhsil
         And Select Ali
         And Click İş təcrübəsi
@@ -38,9 +41,6 @@
         And Fill 1000 in to the emek_haqqi field
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
-        And Select metro module
-        And Select Qırmızı xətt submodule
-        And Select Qarayev submodule
         And Click Mobil
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
@@ -52,10 +52,10 @@
 
        @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without Şəhər Negative
+        And Fill     in to the city field
         Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
-        And Fill     in to the city field
         And Fill Elan Test in to the topic field
         And Click Təhsil
         And Select Ali
@@ -85,10 +85,13 @@
 
        @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without Başlıq Negative
+        And Fill Bakı in to the city field
         Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
-        And Fill Bakı in to the city field
+        And Select metro module
+        And Select Qırmızı xətt submodule
+        And Select Qarayev submodule
         And Click Təhsil
         And Select Ali
         And Click İş təcrübəsi
@@ -107,9 +110,6 @@
         And Fill Miri in to the user_name field
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
-        And Select metro module
-        And Select Qırmızı xətt submodule
-        And Select Qarayev submodule
         And Click Mobil
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
@@ -120,10 +120,13 @@
 
        @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without Əlaqədar Şəxs Negative
+        And Fill Bakı in to the city field
         Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
-        And Fill Bakı in to the city field
+        And Select metro module
+        And Select Qırmızı xətt submodule
+        And Select Qarayev submodule
         And Fill Elan Test in to the topic field
         And Click Təhsil
         And Select Ali
@@ -142,9 +145,6 @@
         And Fill 1000 in to the emek_haqqi field
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
-        And Select metro module
-        And Select Qırmızı xətt submodule
-        And Select Qarayev submodule
         And Click Mobil
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
@@ -155,10 +155,13 @@
 
        @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without Təhsil Negative
+        And Fill Bakı in to the city field
         Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
-        And Fill Bakı in to the city field
+        And Select metro module
+        And Select Qırmızı xətt submodule
+        And Select Qarayev submodule
         And Fill Elan Test in to the topic field
         And Click İş təcrübəsi
         And Select Təcrübəsiz
@@ -176,9 +179,6 @@
         And Fill Miri in to the user_name field
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
-        And Select metro module
-        And Select Qırmızı xətt submodule
-        And Select Qarayev submodule
         And Click Mobil
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
@@ -190,10 +190,13 @@
 
        @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without İş təcrübəsi Negative
+        And Fill Bakı in to the city field
         Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
-        And Fill Bakı in to the city field
+        And Select metro module
+        And Select Qırmızı xətt submodule
+        And Select Qarayev submodule
         And Fill Elan Test in to the topic field
         And Click Təhsil
         And Select Ali
@@ -211,9 +214,6 @@
         And Fill Miri in to the user_name field
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
-        And Select metro module
-        And Select Qırmızı xətt submodule
-        And Select Qarayev submodule
         And Click Mobil
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
@@ -224,10 +224,13 @@
 
        @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without Yaş Negative
+        And Fill Bakı in to the city field
         Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
-        And Fill Bakı in to the city field
+        And Select metro module
+        And Select Qırmızı xətt submodule
+        And Select Qarayev submodule
         And Fill Elan Test in to the topic field
         And Click Təhsil
         And Select Ali
@@ -245,9 +248,6 @@
         And Fill Miri in to the user_name field
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
-        And Select metro module
-        And Select Qırmızı xətt submodule
-        And Select Qarayev submodule
         And Click Mobil
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
@@ -258,10 +258,13 @@
 
        @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without Fəaliyyət sahəsi Negative
+        And Fill Bakı in to the city field
         Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
-        And Fill Bakı in to the city field
+        And Select metro module
+        And Select Qırmızı xətt submodule
+        And Select Qarayev submodule
         And Fill Elan Test in to the topic field
         And Click Təhsil
         And Select Ali
@@ -277,9 +280,6 @@
         And Fill Miri in to the user_name field
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
-        And Select metro module
-        And Select Qırmızı xətt submodule
-        And Select Qarayev submodule
         And Click Mobil
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
@@ -290,10 +290,13 @@
 
        @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without İşin növü Negative
+        And Fill Bakı in to the city field
         Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
-        And Fill Bakı in to the city field
+        And Select metro module
+        And Select Qırmızı xətt submodule
+        And Select Qarayev submodule
         And Fill Elan Test in to the topic field
         And Click Təhsil
         And Select Ali
@@ -311,9 +314,6 @@
         And Fill Miri in to the user_name field
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
-        And Select metro module
-        And Select Qırmızı xətt submodule
-        And Select Qarayev submodule
         And Click Mobil
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
@@ -324,10 +324,13 @@
 
        @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without İş qrafiki Negative
+        And Fill Bakı in to the city field
         Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
-        And Fill Bakı in to the city field
+        And Select metro module
+        And Select Qırmızı xətt submodule
+        And Select Qarayev submodule
         And Fill Elan Test in to the topic field
         And Click Təhsil
         And Select Ali
@@ -345,9 +348,6 @@
         And Fill Miri in to the user_name field
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
-        And Select metro module
-        And Select Qırmızı xətt submodule
-        And Select Qarayev submodule
         And Click Mobil
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp
@@ -358,10 +358,13 @@
 
        @PlaceAnAd @VAKANSİYALAR @Negative
      Scenario: Biznes Without Əmək haqqı Negative
+        And Fill Bakı in to the city field
         Given Select service module
         And Select Vakansiya submodule
         And Select İş axtarıram submodule
-        And Fill Bakı in to the city field
+        And Select metro module
+        And Select Qırmızı xətt submodule
+        And Select Qarayev submodule
         And Fill Elan Test in to the topic field
         And Click Təhsil
         And Select Ali
@@ -380,9 +383,6 @@
         And Fill Miri in to the user_name field
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
-        And Select metro module
-        And Select Qırmızı xətt submodule
-        And Select Qarayev submodule
         And Click Mobil
         And Fill (55) 809 88 99 in to the Mobil field
         And Click Whatsapp

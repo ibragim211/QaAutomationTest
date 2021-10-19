@@ -3,11 +3,11 @@ from selenium.webdriver.common.by import By
 
 
 class ModaVeStilPage(Page):
-    _clickOnSelectStatus = By.NAME, 'd[891][1478]'
-    _clickOnSelectStatusOption = By.XPATH, '//*[text()="Yeni"]'
-    _clickOnSelectButtonCR_ModaStil = By.XPATH, '//a[@data="{id:891,pid:1,subs:1,title:\'Moda və stil\'}"]'
-    _clickOnSelectButtonCR_HediyyeSuvenir = By.XPATH, '//a[@data="{id:566,pid:891,subs:0,title:\'Hədiyyə və suvenirlər\'}"]'
-    _clickOnBolgeC = By.NAME, 'regions_delivery'
+    _clickOnSelectStatus = By.NAME, 'd[891][1478]', 'clickOnSelectStatus'
+    _clickOnSelectStatusOption = By.XPATH, '//*[text()="Yeni"]', 'clickOnSelectStatusOption'
+    _clickOnSelectButtonCR_ModaStil = By.XPATH, '//a[@data="{id:891,pid:1,subs:1,title:\'Moda və stil\'}"]', 'selectButtonCate_ModaStil'
+    _clickOnSelectButtonCR_HediyyeSuvenir = By.XPATH, '//a[@data="{id:566,pid:891,subs:0,title:\'Hədiyyə və suvenirlər\'}"]', 'selectButtonCR_HediyyeSuvenir'
+    _clickOnBolgeC = By.NAME, 'regions_delivery', 'clickOnBolgeC'
 
     def select_category_cr_item_Moda_Stil(self):
         self.click_on_element(*self._clickOnSelectButtonCR_ModaStil)

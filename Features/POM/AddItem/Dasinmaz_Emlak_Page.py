@@ -1,8 +1,6 @@
 from Features.Base_Page import Page
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
+
 from time import sleep
 
 
@@ -20,9 +18,9 @@ class DasinmazEmlakPage(Page):
     _clickBinaNovOption = By.XPATH, '//*[text()="Yeni tikili"]', 'clickBinaNovOption'
     _fillUnvanField = By.NAME, 'd[1305][1517]', 'fillUnvanField'
     _clickRayonField = By.NAME, 'd[2][1061]', 'clickRayonField'
-    _clickRayonOption = By.XPATH, '//*[text()="Abşeron"]', 'clickRayonOption'
+    _clickRayonOption = By.XPATH, '//*[text()="Pirallahı"]', 'clickRayonOption'
     _clickQesebeField = By.NAME, 'd[1305][1518]', 'clickQesebeField'
-    _clickQesebeOption = By.XPATH, '//*[text()="Hökməli"]', 'clickQesebeOption'
+    _clickQesebeOption = By.XPATH, '//*[text()="Pirallahı"]', 'clickQesebeOption'
     _clickElanYerlesenField = By.NAME, 'd[2][1625]', 'clickElanYerlesenField'
     _clickElanYerlesenOption = By.XPATH, '//*[text()="Sahibkar"]', 'clickElanYerlesenOption'
     _fillMertebeNumber = By.NAME, 'd[1305][604]', 'fillMertebeNumber'
@@ -58,7 +56,7 @@ class DasinmazEmlakPage(Page):
     _fillElaqe = By.XPATH, '//input[@name="name"]', 'fillElaqe'
     _clickElaniDercEtmek = By.XPATH, '//input[@value="Elanı dərc etmək"]', '_clickElaniDercEtmek'
     _verifyElementOnNextPageOrPopUpMessage = By.ID, 'statusModal', 'NextPageOrPopUpMessage'
-    # _verifyElementOnNextPageOrPopUpMessage = By.XPATH, '//*[text()="\nModerator tərəfindən yoxlamadan sonra elanıvız dərc olunacaq "]'
+    # _verifyElementOnNextPageOrPopUpMessage = By.XPATH, '//*[text()="\nElanınız bütün qaydalara uyğun olarsa moderator tərəfindən yoxlanıldıqdan sonra saytda dərc olunacaq. "]'
     _warningPopUpMessage = By.XPATH, '//*[text()="Forma doldurularkən bu səhvlər baş verdi:"]', 'warningPopUpMessage'
 
     def elan_yerlesdirmek_click(self):

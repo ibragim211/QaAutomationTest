@@ -84,7 +84,7 @@ class BiznesPage(Page):
 
     def input_img(self, img: str):
         self.upload(img, *self._fillImgField)
-        sleep(3)
+        sleep(4)
 
     def click_submit(self):
         self.click_on_element(*self._clickOnSubmit)
@@ -93,29 +93,29 @@ class BiznesPage(Page):
         self.find_element(*self._signInSuccess)
 
     def pop_up_visible_kateqoriya(self):
-        status = self.find_element(*self._popUpErrKateqoriya).is_displayed()
+        status = self.find_element_visible(*self._popUpErrKateqoriya).is_displayed()
         assert status is True
 
     def pop_up_visible_sheher(self):
-        status = self.find_element(*self._popUpErrSheher).is_displayed()
+        status = self.find_element_visible(*self._popUpErrSheher).is_displayed()
         assert status is True
 
     def pop_up_visible_butun_xana(self):
-        status = self.find_element(*self._popUpErrButunXana).is_displayed()
+        status = self.find_element_visible(*self._popUpErrButunXana).is_displayed()
         assert status is True
 
     def pop_up_visible_qiymet(self):
-        status = self.find_element(*self._popUpErrQiymet).is_displayed()
+        status = self.find_element_visible(*self._popUpErrQiymet).is_displayed()
         assert status is True
 
     def pop_up_visible_prefix(self):
-        status = self.find_element(*self._popUpErrPrefix).is_displayed()
+        status = self.find_element_visible(*self._popUpErrPrefix).is_displayed()
         assert status is True
 
     def pop_up_visible_mobil_prefix(self):
-        status = self.find_element(*self._popUpErrMobil).is_displayed()
+        status = self.find_element_visible(*self._popUpErrMobil).is_displayed()
         assert status is True
 
     def pop_up_visible_whatsapp_prefix(self):
-        status = self.find_element(*self._popUpErrWhatsapp).is_displayed()
+        status = self.find_element_visible(*self._popUpErrWhatsapp).is_displayed()
         assert status is True

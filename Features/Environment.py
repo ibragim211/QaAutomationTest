@@ -8,7 +8,6 @@ from get_gecko_driver import GetGeckoDriver
 
 get_driver = GetGeckoDriver()
 
-
 def browser_init(context):
     """
     :param context: Behave context
@@ -23,6 +22,9 @@ def browser_init(context):
         context.driver = webdriver.Chrome(ChromeDriverManager().install())
     elif browserName == "firefox":
         context.driver = webdriver.Firefox(executable_path=r'C:\QaAutomationTest\geckodriver.exe')
+    elif browserName == "phantom":
+        context.driver = webdriver.PhantomJS('C:\PhantomJs\phantomjs.exe', service_args=['--ignore-ssl-errors=true', '--ssl-protocol=tslv1.0'])
+
     elif browserName == "safari":
         context.driver = webdriver.Safari()
     else:

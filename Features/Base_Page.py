@@ -8,7 +8,7 @@ class Page:
 
     def __init__(self, driver, browser):
         self.driver = driver
-        self.mail = "mirisahib97@gmail.com"
+        self.mail = "mr.sahib97@gmail.com"
         self.password = "0558098899"
         self.link = "https://staging.tut.az"
         self.browser = browser
@@ -27,6 +27,7 @@ class Page:
             now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
             bug = "C:/QaAutomationTest/Features/Photos/Error/screenshot-{}-{}.png".format(locator[2], now)
             self.driver.save_screenshot(bug)
+            # exit()
             return self.driver.find_element(by, value)
 
 
@@ -43,6 +44,7 @@ class Page:
             now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
             bug = "C:/QaAutomationTest/Features/Photos/Error/screenshot-{}-{}.png".format(locator[2], now)
             self.driver.save_screenshot(bug)
+            # exit()
             return self.driver.find_element(by, value)
 
 
@@ -51,7 +53,7 @@ class Page:
         by = locator[0]
         value = locator[1]
         try:
-            WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((by, value)))
+            WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((by, value)))
 
             return self.driver.find_element(by, value).click()
 
@@ -59,7 +61,10 @@ class Page:
             now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
             bug = "C:/QaAutomationTest/Features/Photos/Error/screenshot-{}-{}_click.png".format(locator[2], now)
             self.driver.save_screenshot(bug)
+            # exit()
             return self.driver.find_element(by, value).click()
+
+
 
     def input(self, text, *locator):
 
@@ -75,6 +80,7 @@ class Page:
             now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
             bug = "C:/QaAutomationTest/Features/Photos/Error/screenshot-{}-{}.png".format(locator[2], now)
             self.driver.save_screenshot(bug)
+            # exit()
             element = self.driver.find_element(by, value)
             element.clear()
             element.send_keys(text)
@@ -92,13 +98,26 @@ class Page:
             now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
             bug = "C:/QaAutomationTest/Features/Photos/Error/screenshot-{}-{}.png".format(locator[2], now)
             self.driver.save_screenshot(bug)
+            # exit()
             self.driver.find_element(by, value).send_keys(text)
 
     def move_to_element(self, *locator):
 
         if self.browser == "chrome":
+            by = locator[0]
+            value = locator[1]
 
-            element = self.driver.find_element(by=locator[0],
-                                               value=locator[1])
-            element.actions = ActionChains(self.driver)
-            element.actions.move_to_element(element).perform()
+            try:
+                WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((by, value)))
+                element = self.driver.find_element(by, value)
+                element.actions = ActionChains(self.driver)
+                element.actions.move_to_element(element).perform()
+
+            except Exception as e:
+                now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+                bug = "C:/QaAutomationTest/Features/Photos/Error/screenshot-{}-{}_move.png".format(locator[2], now)
+                self.driver.save_screenshot(bug)
+                # exit()
+                element = self.driver.find_element(by, value)
+                element.actions = ActionChains(self.driver)
+                element.actions.move_to_element(element).perform()
