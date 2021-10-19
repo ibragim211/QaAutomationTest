@@ -1,65 +1,63 @@
 from Features.Base_Page import Page
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
+
 from time import sleep
 
 
 class DasinmazEmlakPage(Page):
-    _clickElanYerlesdirmek = By.CLASS_NAME, 'add'
-    _clickClosePopUp = By.CLASS_NAME, 'statusModalClose'
-    _clickCategoryField = By.XPATH, '//*[text()="Kateqoriyanı seçin"]'
-    _clickOption = By.XPATH, '//*[text()="Daşınmaz əmlak"]'
-    _clickOptionMenziller = By.XPATH, '//*[text()="Mənzillər"]'
-    _clickCityField = By.XPATH, '//*[@class="input-large j-geo-city-select-ac"]'
-    _clickCityBaku = By.XPATH, '//*[text()="Bakı"]'
-    _clickElanNovField = By.XPATH, '//*[text()="Elanın növü"]'
-    _clickElanNovOption = By.XPATH, '//*[text()="Satılır"]'
-    _clickBinaNovField = By.XPATH, '//*[text()="Elanı yerləşdirən"]'
-    _clickBinaNovOption = By.XPATH, '//*[text()="Yeni tikili"]'
-    _fillUnvanField = By.NAME, 'd[1305][1517]'
-    _clickRayonField = By.NAME, 'd[2][1061]'
-    _clickRayonOption = By.XPATH, '//*[text()="Abşeron"]'
-    _clickQesebeField = By.NAME, 'd[1305][1518]'
-    _clickQesebeOption = By.XPATH, '//*[text()="Hökməli"]'
-    _clickElanYerlesenField = By.NAME, 'd[2][1625]'
-    _clickElanYerlesenOption = By.XPATH, '//*[text()="Sahibkar"]'
-    _fillMertebeNumber = By.NAME, 'd[1305][604]'
-    _clickOtaqlarinSayiField = By.NAME, 'd[1305][601]'
-    _clickOtaqlarinSayiOption = By.XPATH, '//option[text()="7"]'
-    _fillSaheData = By.NAME, 'd[1305][603]'
-    _clickTemirField = By.NAME, 'd[1305][768]'
-    _clickTemirOption = By.XPATH, '//*[text()="Təmirli"]'
-    _clickQazCheckBox = By.XPATH, '//*[text()="Qaz"]'
-    _clickKombiCheckBox = By.XPATH, '//*[text()="Kombi"]'
-    _clickQabyuyanMasin = By.XPATH, '//*[text()="Qabyuyan maşın"]'
-    _clickMetbexTexnikasi = By.XPATH, '//*[text()="Mətbəx texnikası"]'
-    _clickMerkeziIstilik = By.XPATH, '//*[text()="Mərkəzi istilik"]'
-    _clickIstiSu = By.XPATH, '//*[text()="İsti su"]'
-    _clickMebel = By.XPATH, '//*[text()="Mebel"]'
-    _clickPaltaryuyanMasin = By.XPATH, '//*[text()="Paltaryuyan maşın"]'
-    _clickSoyuducu = By.XPATH, '//*[text()="Soyuducu"]'
-    _clickKondisioner = By.XPATH, '//*[text()="Kondisioner"]'
-    _clickSenedNov = By.XPATH, '//*[text()="Sənədin növü"]'
-    _clickOrderOption = By.XPATH, '//*[text()="Order"]'
-    _clickBarterCheckBox = By.XPATH, '//input[@class="j-price-var priceexchange"]'
-    _fillAZNField = By.XPATH, '//input[@class="input-small price_inp j-price"]'
-    _clickEndirimCheckBox = By.NAME, 'price_ex[2]'
-    _clickIpotekaCheckBox = By.NAME, 'price_ex[4]'
-    _fillTextBox = By.ID, 'j-i-descr'
-    _fillLinkVideo = By.NAME, 'video'
-    _inputPhoto = By.XPATH, '//input[@type="file"]'
-    _clickMetroField = By.XPATH, '//*[text()="Stansiyanı seçin"]'
-    _clickRedLineOption = By.XPATH, '//*[text()="Qırmızı xətt"]'
-    _clickMay28Station = By.XPATH, '//*[text()="28 May"]'
-    _fillContactPhone = By.NAME, 'phones[1]'
-    _fillWhatsApp = By.NAME, 'contacts[whatsapp]'
-    _fillElaqe = By.XPATH, '//input[@name="name"]'
-    _clickElaniDercEtmek = By.XPATH, '//input[@value="Elanı dərc etmək"]'
-    _verifyElementOnNextPageOrPopUpMessage = By.ID, 'statusModal'
-    # _verifyElementOnNextPageOrPopUpMessage = By.XPATH, '//*[text()="\nModerator tərəfindən yoxlamadan sonra elanıvız dərc olunacaq "]'
-    _warningPopUpMessage = By.XPATH, '//*[text()="Forma doldurularkən bu səhvlər baş verdi:"]'
+    _clickElanYerlesdirmek = By.CLASS_NAME, 'add', 'clickElanYerlesdirmek'
+    _clickClosePopUp = By.CLASS_NAME, 'statusModalClose', 'clickClosePopUp'
+    _clickCategoryField = By.XPATH, '//*[text()="Kateqoriyanı seçin"]', 'clickCategoryField'
+    _clickOption = By.XPATH, '//*[text()="Daşınmaz əmlak"]', 'clickOption'
+    _clickOptionMenziller = By.XPATH, '//*[text()="Mənzillər"]', 'clickOptionMenziller'
+    _clickCityField = By.XPATH, '//*[@class="input-large j-geo-city-select-ac"]', 'clickCityField'
+    _clickCityBaku = By.XPATH, '//*[text()="Bakı"]', 'clickCityBaku'
+    _clickElanNovField = By.XPATH, '//*[text()="Elanın növü"]', 'clickElanNovField'
+    _clickElanNovOption = By.XPATH, '//*[text()="Satılır"]', 'clickElanNovOption'
+    _clickBinaNovField = By.XPATH, '//*[text()="Elanı yerləşdirən"]', 'clickBinaNovField'
+    _clickBinaNovOption = By.XPATH, '//*[text()="Yeni tikili"]', 'clickBinaNovOption'
+    _fillUnvanField = By.NAME, 'd[1305][1517]', 'fillUnvanField'
+    _clickRayonField = By.NAME, 'd[2][1061]', 'clickRayonField'
+    _clickRayonOption = By.XPATH, '//*[text()="Pirallahı"]', 'clickRayonOption'
+    _clickQesebeField = By.NAME, 'd[1305][1518]', 'clickQesebeField'
+    _clickQesebeOption = By.XPATH, '//*[text()="Pirallahı"]', 'clickQesebeOption'
+    _clickElanYerlesenField = By.NAME, 'd[2][1625]', 'clickElanYerlesenField'
+    _clickElanYerlesenOption = By.XPATH, '//*[text()="Sahibkar"]', 'clickElanYerlesenOption'
+    _fillMertebeNumber = By.NAME, 'd[1305][604]', 'fillMertebeNumber'
+    _clickOtaqlarinSayiField = By.NAME, 'd[1305][601]', 'clickOtaqlarinSayiField'
+    _clickOtaqlarinSayiOption = By.XPATH, '//option[text()="7"]', 'clickOtaqlarinSayiOption'
+    _fillSaheData = By.NAME, 'd[1305][603]', 'fillSaheData'
+    _clickTemirField = By.NAME, 'd[1305][768]', 'clickTemirField'
+    _clickTemirOption = By.XPATH, '//*[text()="Təmirli"]', 'clickTemirOption'
+    _clickQazCheckBox = By.XPATH, '//*[text()="Qaz"]', 'clickQazCheckBox'
+    _clickKombiCheckBox = By.XPATH, '//*[text()="Kombi"]', 'clickKombiCheckBox'
+    _clickQabyuyanMasin = By.XPATH, '//*[text()="Qabyuyan maşın"]', 'clickQabyuyanMasin'
+    _clickMetbexTexnikasi = By.XPATH, '//*[text()="Mətbəx texnikası"]', 'clickMetbexTexnikasi'
+    _clickMerkeziIstilik = By.XPATH, '//*[text()="Mərkəzi istilik"]', 'clickMerkeziIstilik'
+    _clickIstiSu = By.XPATH, '//*[text()="İsti su"]', 'clickIstiSu'
+    _clickMebel = By.XPATH, '//*[text()="Mebel"]', 'clickMebel'
+    _clickPaltaryuyanMasin = By.XPATH, '//*[text()="Paltaryuyan maşın"]', 'clickPaltaryuyanMasin'
+    _clickSoyuducu = By.XPATH, '//*[text()="Soyuducu"]', 'clickSoyuducu'
+    _clickKondisioner = By.XPATH, '//*[text()="Kondisioner"]', 'clickKondisioner'
+    _clickSenedNov = By.XPATH, '//*[text()="Sənədin növü"]', 'clickSenedNov'
+    _clickOrderOption = By.XPATH, '//*[text()="Order"]', 'clickOrderOption'
+    _clickBarterCheckBox = By.XPATH, '//input[@class="j-price-var priceexchange"]', 'clickBarterCheckBox'
+    _fillAZNField = By.XPATH, '//input[@class="input-small price_inp j-price"]', 'fillAZNField'
+    _clickEndirimCheckBox = By.NAME, 'price_ex[2]', 'fillAZNField'
+    _clickIpotekaCheckBox = By.NAME, 'price_ex[4]', 'clickIpotekaCheckBox'
+    _fillTextBox = By.ID, 'j-i-descr', 'fillTextBox'
+    _fillLinkVideo = By.NAME, 'video', 'fillLinkVideo'
+    _inputPhoto = By.XPATH, '//input[@type="file"]', 'inputPhoto'
+    _clickMetroField = By.XPATH, '//*[text()="Stansiyanı seçin"]', 'clickMetroField'
+    _clickRedLineOption = By.XPATH, '//*[text()="Qırmızı xətt"]', 'clickRedLineOption'
+    _clickMay28Station = By.XPATH, '//*[text()="28 May"]', 'clickMay28Station'
+    _fillContactPhone = By.NAME, 'phones[1]', 'fillContactPhone'
+    _fillWhatsApp = By.NAME, 'contacts[whatsapp]', 'fillWhatsApp'
+    _fillElaqe = By.XPATH, '//input[@name="name"]', 'fillElaqe'
+    _clickElaniDercEtmek = By.XPATH, '//input[@value="Elanı dərc etmək"]', '_clickElaniDercEtmek'
+    _verifyElementOnNextPageOrPopUpMessage = By.ID, 'statusModal', 'NextPageOrPopUpMessage'
+    # _verifyElementOnNextPageOrPopUpMessage = By.XPATH, '//*[text()="\nElanınız bütün qaydalara uyğun olarsa moderator tərəfindən yoxlanıldıqdan sonra saytda dərc olunacaq. "]'
+    _warningPopUpMessage = By.XPATH, '//*[text()="Forma doldurularkən bu səhvlər baş verdi:"]', 'warningPopUpMessage'
 
     def elan_yerlesdirmek_click(self):
         self.click_on_element(*self._clickElanYerlesdirmek)
@@ -210,9 +208,9 @@ class DasinmazEmlakPage(Page):
         self.click_on_element(*self._clickElaniDercEtmek)
 
     def element_visible(self):
-        status = self.find_element(*self._verifyElementOnNextPageOrPopUpMessage).is_displayed()
+        status = self.find_element_visible(*self._verifyElementOnNextPageOrPopUpMessage).is_displayed()
         assert status is True
 
     def warning_message(self):
-        status = self.find_element(*self._warningPopUpMessage).is_displayed()
+        status = self.find_element_visible(*self._warningPopUpMessage).is_displayed()
         assert status is True

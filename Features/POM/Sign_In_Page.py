@@ -6,16 +6,17 @@ from time import sleep
 
 
 class LoginPage(Page):
-    _clickOnCloseButton = By.CLASS_NAME, 'close'
-    _clickOnGirisButton = By.CLASS_NAME, 'login'
-    _fillEmailField = By.ID, 'j-u-login-email'
-    _fillPasswordField = By.ID, 'j-u-login-pass'
-    _clickOnDaxilOlButton = By.XPATH, '//button[@class="btn btn-success j-submit"]'
-    _signInVerify = By.XPATH, '//div[@class="products-block_title"]'
-    _popUpMessage = By.XPATH, '//*[text()="Forma doldurularkən bu səhvlər baş verdi:"]'
-    _warningForInvalidData = By.XPATH, '//*[text()="E-mail və ya şifrə səhv qeyd olunub"]'
+    _clickOnCloseButton = By.CLASS_NAME, 'close', 'clickOnCloseButton'
+    _clickOnGirisButton = By.CLASS_NAME, 'login', 'clickOnGirisButton'
+    _fillEmailField = By.ID, 'j-u-login-email', 'fillEmailField'
+    _fillPasswordField = By.ID, 'j-u-login-pass', 'fillPasswordField'
+    _clickOnDaxilOlButton = By.XPATH, '//button[@class="btn btn-success j-submit"]', 'clickOnDaxilOlButton'
+    _signInVerify = By.XPATH, '//div[@class="products-block_title"]', 'signInVerify'
+    _popUpMessage = By.XPATH, '//*[text()="Forma doldurularkən bu səhvlər baş verdi:"]', 'popUpMessage'
+    _warningForInvalidData = By.XPATH, '//*[text()="E-mail və ya şifrə səhv qeyd olunub"]', 'warningForInvalidData'
 
     def open_tut_az(self):
+        # self.driver.set_window_size(1920, 200)
         self.driver.get(self.link)
 
     def close_pop_up(self):
@@ -40,13 +41,16 @@ class LoginPage(Page):
         self.click_on_element(*self._clickOnDaxilOlButton)
 
     def logo_verify(self):
+        sleep(5)
         status = self.find_element(*self._signInVerify).is_displayed()
         assert status is True
 
     def pop_up_visible(self):
-        status = self.find_element(*self._popUpMessage).is_displayed()
+        sleep(5)
+        status = self.find_element_visible(*self._popUpMessage).is_displayed()
         assert status is True
 
     def warning_for_invalid_data(self):
-        status = self.find_element(*self._warningForInvalidData).is_displayed()
+        sleep(5)
+        status = self.find_element_visible(*self._warningForInvalidData).is_displayed()
         assert status is True

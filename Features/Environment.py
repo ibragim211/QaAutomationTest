@@ -4,7 +4,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 import Base_Page
 import time
+from get_gecko_driver import GetGeckoDriver
 
+get_driver = GetGeckoDriver()
 
 def browser_init(context):
     """
@@ -19,7 +21,10 @@ def browser_init(context):
     if browserName == "chrome":
         context.driver = webdriver.Chrome(ChromeDriverManager().install())
     elif browserName == "firefox":
-        context.driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+        context.driver = webdriver.Firefox(executable_path=r'C:\QaAutomationTest\geckodriver.exe')
+    elif browserName == "phantom":
+        context.driver = webdriver.PhantomJS('C:\PhantomJs\phantomjs.exe', service_args=['--ignore-ssl-errors=true', '--ssl-protocol=tslv1.0'])
+
     elif browserName == "safari":
         context.driver = webdriver.Safari()
     else:
@@ -27,7 +32,7 @@ def browser_init(context):
         raise Exception('driver is not found')
 
     context.driver.maximize_window()
-    context.WebSite = WebSite(context.driver)
+    context.WebSite = WebSite(context.driver, browserName)
     context.driver.implicitly_wait(5)
 
 

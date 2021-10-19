@@ -16,10 +16,10 @@
 
         @PlaceAnAd @TANIŞLIQ @Positive
       Scenario: Tanışlıq Positive
+        And Fill Bakı in to the city field
         Given Select service module
         And Select Tanışlıq submodule
         And Select Oğlan qız axtarır submodule
-        And Fill Bakı in to the city field
         And Fill 10 in to the age field
         And Click Tanışlıq məqsədi
         And Select Dostluq və ünsiyyət
@@ -39,14 +39,14 @@
 
        @PlaceAnAd @TANIŞLIQ @Negative
       Scenario: Tanışlıq Without Şəhər Negative
+        And Fill   in to the city field
         Given Select service module
         And Select Tanışlıq submodule
         And Select Oğlan qız axtarır submodule
-        And Fill   in to the city field
+        And Fill Miri in to the user_name field
         And Fill 10 in to the age field
         And Click Tanışlıq məqsədi
         And Select Dostluq və ünsiyyət
-        And Fill Miri in to the user_name field
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
         And Click Mobil
@@ -59,10 +59,10 @@
 
          @PlaceAnAd @TANIŞLIQ @Negative
       Scenario: Tanışlıq Without Əlaqədar Şəxs Negative
+        And Fill Bakı in to the city field
         Given Select service module
         And Select Tanışlıq submodule
         And Select Oğlan qız axtarır submodule
-        And Fill Bakı in to the city field
         And Fill 10 in to the age field
         And Click Tanışlıq məqsədi
         And Select Dostluq və ünsiyyət
@@ -81,10 +81,10 @@
 
         @PlaceAnAd @TANIŞLIQ @Negative
       Scenario: Tanışlıq Without Tanışlıq məqsədi Negative
+        And Fill Bakı in to the city field
         Given Select service module
         And Select Tanışlıq submodule
         And Select Oğlan qız axtarır submodule
-        And Fill Bakı in to the city field
         And Fill 10 in to the age field
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field
         And Fill TEST TEST TEST TEST in to the Təsvir field
@@ -102,10 +102,10 @@
 
         @PlaceAnAd @TANIŞLIQ @Negative
       Scenario: Tanışlıq Without Yaş Negative
+        And Fill Bakı in to the city field
         Given Select service module
         And Select Tanışlıq submodule
         And Select Oğlan qız axtarır submodule
-        And Fill Bakı in to the city field
         And Click Tanışlıq məqsədi
         And Select Dostluq və ünsiyyət
         And Fill https://www.youtube.com/watch?v=KH1V6CHO1Jk in to the Videoya keçid field

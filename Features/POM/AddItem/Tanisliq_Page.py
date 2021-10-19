@@ -3,11 +3,11 @@ from selenium.webdriver.common.by import By
 
 
 class TanisliqPage(Page):
-    _clickOnSelectButtonCR_Tanisliq = By.XPATH, '//a[@data="{id:5,pid:1,subs:1,title:\'Tanışlıq\'}"]'
-    _clickOnSelectButtonCR_OglanQiz = By.XPATH, '//a[@data="{id:126,pid:5,subs:0,title:\'Oğlan qız axtarır\'}"]'
-    _fillAgeField = By.NAME, 'd[5][538]'
-    _clickOnSelectButtonCR_TanisliqMeqsedi = By.NAME, 'd[126][1301]'
-    _clickOnSelectButtonCR_DostluqUnsiyyet = By.XPATH, '//*[text()="Dostluq və ünsiyyət"]'
+    _clickOnSelectButtonCR_Tanisliq = By.XPATH, '//a[@data="{id:5,pid:1,subs:1,title:\'Tanışlıq\'}"]', 'selectButtonCate_Tanisliq'
+    _clickOnSelectButtonCR_OglanQiz = By.XPATH, '//a[@data="{id:126,pid:5,subs:0,title:\'Oğlan qız axtarır\'}"]', 'selectButtonCate_OglanQiz'
+    _fillAgeField = By.NAME, 'd[5][538]', 'fillAgeField'
+    _clickOnSelectButtonCR_TanisliqMeqsedi = By.NAME, 'd[126][1301]', 'selectButtonCate_TanisliqMeqsedi'
+    _clickOnSelectButtonCR_DostluqUnsiyyet = By.XPATH, '//*[text()="Dostluq və ünsiyyət"]', 'selectButtonCate_DostluqUnsiyyet'
 
     def select_category_cr_item_Tanisliq(self):
         self.click_on_element(*self._clickOnSelectButtonCR_Tanisliq)

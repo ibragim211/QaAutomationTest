@@ -4,34 +4,30 @@ from time import sleep
 
 
 class BiznesPage(Page):
-    _clickOnElanYerleshdirmek = By.CLASS_NAME, 'add'
-    _fillImgField = By.NAME, 'file'
-    _clickOnSubmit = By.XPATH, '//input[@class="btn btn-success j-submit"]'
-    _clickOnSelectButtonCR = By.XPATH, '//a[@class="ajax ajax-ico j-cat-select-link"]'
-    _fillCityField = By.XPATH, '//input[@class ="input-large j-geo-city-select-ac"]'
-    _fillTopicField = By.ID, 'j-i-title'
-    _clickOnBarter = By.XPATH, '//input[@class ="j-price-var priceexchange"]'
-    _fillUserNameField = By.ID, 'j-i-name'
-    _clickOnSelectButtonCR_Biznes = By.XPATH, '//a[@data="{id:1767,pid:1,subs:1,title:\'Biznes\'}"]'
-    _clickOnSelectButtonCR_HazirBiznes = By.XPATH, '//a[@data="{id:1768,pid:1767,subs:0,title:\'Hazır biznes\'}"]'
-    _fillDescrField = By.ID, 'j-i-descr'
-    _fillVideoField = By.NAME, 'video'
-    _clickOnSelectButtonCR_Metro = By.XPATH, '//a[@class="ajax ajax-ico j-geo-metro-link"]'
-    _clickOnSelectButtonCR_Metro_Way = By.XPATH, '//a[@data="{id:464,city:9064}"]'
-    _clickOnSelectButtonCR_Metro_Qarayev = By.XPATH, '//a[@data="{id:457,branch:464,city:9064}"]'
-    _fillPhoneNumberField = By.NAME, 'phones[1]'
-    _fillWhatsappField = By.NAME, 'contacts[whatsapp]'
-    _popUpErrKateqoriya = By.XPATH, '//*[text()="Kateqoriya düzgün qeyd olunmayıb"]'
-    _popUpErrSheher = By.XPATH, '//*[text()="Şəhəri qeyd edin"]'
-    _popUpErrButunXana = By.XPATH, '//*[text()="Qeyd olunmuş bütün xanaları doldurun"]'
-    _popUpErrQiymet = By.XPATH, '//*[text()="Qiyməti qeyd edin"]'
-    _popUpErrPrefix = By.XPATH, '//*[text()="Prefiksi düzgün qeyd edin"]'
-    _popUpErrMobil = By.XPATH, '//*[text()="Kontakt nömrəsi üçün prefiksi düzgün qeyd edin"]'
-    _popUpErrWhatsapp = By.XPATH, '//*[text()="Whatsapp üçün prefiksi düzgün qeyd edin"]'
-    _signInSuccess = By.XPATH, '//div[@class="products-block_title"]'
-
-    def elan_yerleshdrimek(self):
-        self.click_on_element(*self._clickOnElanYerleshdirmek)
+    _fillImgField = By.NAME, 'file', 'fillImgField'
+    _clickOnSubmit = By.XPATH, '//input[@class="btn btn-success j-submit"]', 'clickOnSubmit'
+    _clickOnSelectButtonCR = By.XPATH, '//a[@class="ajax ajax-ico j-cat-select-link"]', 'selectCategory'
+    _fillCityField = By.XPATH, '//input[@class ="input-large j-geo-city-select-ac"]', 'fillCityField'
+    _fillTopicField = By.ID, 'j-i-title', 'fillTopicField'
+    _clickOnBarter = By.NAME, 'price_ex[1]', 'clickOnBarter'
+    _fillUserNameField = By.ID, 'j-i-name', 'fillUserNameField'
+    _clickOnSelectButtonCR_Biznes = By.XPATH, '//a[@data="{id:1767,pid:1,subs:1,title:\'Biznes\'}"]', 'selectButtonCate_Biznes'
+    _clickOnSelectButtonCR_HazirBiznes = By.XPATH, '//a[@data="{id:1768,pid:1767,subs:0,title:\'Hazır biznes\'}"]', 'selectButtonCate_HazirBiznes'
+    _fillDescrField = By.ID, 'j-i-descr', 'fillDescrField'
+    _fillVideoField = By.NAME, 'video', 'fillVideoField'
+    _clickOnSelectButtonCR_Metro = By.XPATH, '//a[@class="ajax ajax-ico j-geo-metro-link"]', 'selectButtonCate_Metro'
+    _clickOnSelectButtonCR_Metro_Way = By.XPATH, '//a[@data="{id:464,city:9064}"]', 'selectButtonCate_Metro_Way'
+    _clickOnSelectButtonCR_Metro_Qarayev = By.XPATH, '//a[@data="{id:457,branch:464,city:9064}"]', 'selectButtonCate_Metro_Qarayev'
+    _fillPhoneNumberField = By.NAME, 'phones[1]', 'fillPhoneNumberField'
+    _fillWhatsappField = By.NAME, 'contacts[whatsapp]', 'fillWhatsappField'
+    _popUpErrKateqoriya = By.XPATH, '//*[text()="Kateqoriya düzgün qeyd olunmayıb"]', 'popUpErrKateqoriya'
+    _popUpErrSheher = By.XPATH, '//*[text()="Şəhəri qeyd edin"]', 'popUpErrSheher'
+    _popUpErrButunXana = By.XPATH, '//*[text()="Qeyd olunmuş bütün xanaları doldurun"]', 'popUpErrButunXana'
+    _popUpErrQiymet = By.XPATH, '//*[text()="Qiyməti qeyd edin"]', 'popUpErrQiymet'
+    _popUpErrPrefix = By.XPATH, '//*[text()="Prefiksi düzgün qeyd edin"]', 'popUpErrPrefix'
+    _popUpErrMobil = By.XPATH, '//*[text()="Kontakt nömrəsi üçün prefiksi düzgün qeyd edin"]', 'popUpErrMobil'
+    _popUpErrWhatsapp = By.XPATH, '//*[text()="Whatsapp üçün prefiksi düzgün qeyd edin"]', 'popUpErrWhatsapp'
+    _signInSuccess = By.XPATH, '//div[@class="products-block_title"]', 'signInSuccess'
 
     def select_category_cr_item(self):
         self.click_on_element(*self._clickOnSelectButtonCR)
@@ -61,15 +57,16 @@ class BiznesPage(Page):
         self.input(video_link, *self._fillVideoField)
 
     def click_mobil(self):
-        self.move_to_element(*self._fillPhoneNumberField)
-        self.click_on_element(*self._fillPhoneNumberField)
+        if self.browser == 'chrome':
+            self.move_to_element(*self._fillPhoneNumberField)
+            self.click_on_element(*self._fillPhoneNumberField)
 
     def click_whatsapp(self):
-        self.move_to_element(*self._fillWhatsappField)
-        self.click_on_element(*self._fillWhatsappField)
+        if self.browser == 'chrome':
+            self.move_to_element(*self._fillWhatsappField)
+            self.click_on_element(*self._fillWhatsappField)
 
     def select_metro(self):
-        sleep(1)
         self.move_to_element(*self._clickOnSelectButtonCR_Metro)
         self.click_on_element(*self._clickOnSelectButtonCR_Metro)
 
@@ -87,38 +84,38 @@ class BiznesPage(Page):
 
     def input_img(self, img: str):
         self.upload(img, *self._fillImgField)
-        sleep(3)
+        sleep(4)
 
     def click_submit(self):
         self.click_on_element(*self._clickOnSubmit)
 
     def sign_in_success(self):
-        self.find_element(*self._signInSuccess).is_displayed()
+        self.find_element(*self._signInSuccess)
 
     def pop_up_visible_kateqoriya(self):
-        status = self.find_element(*self._popUpErrKateqoriya).is_displayed()
+        status = self.find_element_visible(*self._popUpErrKateqoriya).is_displayed()
         assert status is True
 
     def pop_up_visible_sheher(self):
-        status = self.find_element(*self._popUpErrSheher).is_displayed()
+        status = self.find_element_visible(*self._popUpErrSheher).is_displayed()
         assert status is True
 
     def pop_up_visible_butun_xana(self):
-        status = self.find_element(*self._popUpErrButunXana).is_displayed()
+        status = self.find_element_visible(*self._popUpErrButunXana).is_displayed()
         assert status is True
 
     def pop_up_visible_qiymet(self):
-        status = self.find_element(*self._popUpErrQiymet).is_displayed()
+        status = self.find_element_visible(*self._popUpErrQiymet).is_displayed()
         assert status is True
 
     def pop_up_visible_prefix(self):
-        status = self.find_element(*self._popUpErrPrefix).is_displayed()
+        status = self.find_element_visible(*self._popUpErrPrefix).is_displayed()
         assert status is True
 
     def pop_up_visible_mobil_prefix(self):
-        status = self.find_element(*self._popUpErrMobil).is_displayed()
+        status = self.find_element_visible(*self._popUpErrMobil).is_displayed()
         assert status is True
 
     def pop_up_visible_whatsapp_prefix(self):
-        status = self.find_element(*self._popUpErrWhatsapp).is_displayed()
+        status = self.find_element_visible(*self._popUpErrWhatsapp).is_displayed()
         assert status is True
